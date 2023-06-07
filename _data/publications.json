@@ -28,7 +28,7 @@
 				]
 			]
 		}
-	}
+	}，
 
 	{
 			"id": ,
@@ -59,7 +59,7 @@
 					]
 				]
 			}
-	}
+	}，
 
 	{
 			"id": ,
@@ -102,7 +102,7 @@
 					]
 				]
 			}
-	}
+	}，
 
 	{
 			"id": ,
@@ -137,5 +137,53 @@
 					]
 				]
 			}
-	}
+	}，
+
+
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Neural sensitivity to semantic neighbors is stable across the adult lifespan",
+			"container-title": "Neuropsychologia",
+			"page": "108237" ,
+			"volume": ,
+			"issue": ,
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "Diaz, M. T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				},
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Cosgrove, A. L." ,
+					"given": "M."
+				}
+				{
+					"family": "Gertel, V. H." ,
+					"given": "M."
+				}
+				{
+					"family": "Troutman, S. B." ,
+					"given": "M."
+				}
+				{
+					"family": "Karimi, H." ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2022",
+						2
+					]
+				]
+			}
+	}，
 ]
