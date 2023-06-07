@@ -29,70 +29,35 @@
 			]
 		}
 	}
-],
-
-[
 	{
-		"id": ,
-		"type": "article-journal",
-		"title": "Resting state network segregation modulates age-related differences in language production",
-		"container-title": "Neurobiology of Language",
-		"page": "1-52" ,
-		"volume": ,
-		"issue": ,
-		"source": ,
-		"abstract": ,
-		"DOI": ,
-		"author": [
-			{
-				"family": "Zhang, H." ,
-				"given": "H."
-			},
-			{
-				"family": "Diaz, M." ,
-				"given": "M."
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2023",
-					2
+			"id": ,
+			"type": "article-journal",
+			"title": "Resting state network segregation modulates age-related differences in language production",
+			"container-title": "Neurobiology of Language",
+			"page": "1-52" ,
+			"volume": ,
+			"issue": ,
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "Zhang, H." ,
+					"given": "H."
+				},
+				{
+					"family": "Diaz, M." ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2023",
+						2
+					]
 				]
-			]
-		}
-	}
-],
-
-[
-	{
-		"id": ,
-		"type": "article-journal",
-		"title": "Resting state network segregation modulates age-related differences in language production",
-		"container-title": "Neurobiology of Language",
-		"page": "1-52" ,
-		"volume": ,
-		"issue": ,
-		"source": ,
-		"abstract": ,
-		"DOI": ,
-		"author": [
-			{
-				"family": "Zhang, H." ,
-				"given": "H."
-			},
-			{
-				"family": "Diaz, M." ,
-				"given": "M."
 			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2023",
-					2
-				]
-			]
 		}
 	}
 ]
