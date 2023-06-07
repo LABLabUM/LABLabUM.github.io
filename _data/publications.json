@@ -89,7 +89,7 @@
 					"given": "H."
 				},
 				{
-					"family": "Guo, T.<sup>*</sup>" ,
+					"family": "Guo, T.<b><sup>*</sup></b>" ,
 					"given": "M."
 				}
 			],
@@ -97,6 +97,576 @@
 				"date-parts": [
 					[
 						"2023",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Editorial: Cognitive factors in bilingual language processing",
+			"container-title": "Frontiers in Psychology",
+			"page":  ,
+			"volume": "13:1055759",
+			"issue": ,
+			"source": ,
+			"abstract": ,
+			"DOI": "10.3389/fpsyg.2022.1055759",
+			"author": [
+				{
+					"family": "Wu, Y. J.<b><sup>*</sup></b>" ,
+					"given": "M."
+				},
+				{
+					"family": "Miwa K" ,
+					"given": "M."
+				},
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2022",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Neural sensitivity to semantic neighbors is stable across the adult lifespan",
+			"container-title": "Neuropsychologia",
+			"page": "108237" ,
+			"volume": ,
+			"issue": ,
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "Diaz, M. T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				},
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Cosgrove, A. L." ,
+					"given": "M."
+				}
+				{
+					"family": "Gertel, V. H." ,
+					"given": "M."
+				}
+				{
+					"family": "Troutman, S. B." ,
+					"given": "M."
+				}
+				{
+					"family": "Karimi, H." ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2022",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "The use of a second language enhances the neural efficiency of inhibitory control: an ERP study",
+			"container-title": "Bilingualism: Language and Cognition",
+			"page": "163-180" ,
+			"volume": "25",
+			"issue": "1",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "Kałamała, P." ,
+					"given": "M."
+				},
+				{
+					"family": "Walther, J." ,
+					"given": "M."
+				},
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Senderecka, M." ,
+					"given": "M."
+				},
+				{
+					"family": " Wodniecka, Z. <b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2022",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Language immersion and language training: Two paths to enhanced language regulation and cognitive control",
+			"container-title": "Brain and Language",
+			"page":  ,
+			"volume": "223",
+			"issue": "105043",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Diaz, M. T." ,
+					"given": "M."
+				},
+				{
+					"family": "Guo, T." ,
+					"given": "M."
+				},
+				{
+					"family": "Kroll, J. F.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2021",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Age-related differences in resting-state and task-based network characteristics and cognition: A lifespan sample",
+			"container-title": "Neurobiology of Aging",
+			"page": "262-272" ,
+			"volume": "101",
+			"issue": ,
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": " Gertel, V.H." ,
+					"given": "M."
+				},
+				{
+					"family": "Cosgrove, A.L." ,
+					"given": "M."
+				},
+				{
+					"family": "Diaz, M.T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2021",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "The intensity and connectivity of spontaneous brain activity in a language network relate to aging and language",
+			"container-title": "Neuropsychologia",
+			"page": "840-853" ,
+			"volume": "57",
+			"issue": "5",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Bai X." ,
+					"given": "M."
+				},
+				{
+					"family": "Diaz M.T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2021",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Neural sensitivity to phonological characteristics is stable across the lifespan",
+			"container-title": "Neuroimage",
+			"page":  ,
+			"volume": "225",
+			"issue": "117511",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "Diaz, M.T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				},
+				{
+					"family": "Karimi, H." ,
+					"given": "M."
+				},
+				{
+					"family": "Gertel, V.H." ,
+					"given": "M."
+				},
+				{
+					"family": "Troutman, S.B.W." ,
+					"given": "M."
+				},
+				{
+					"family": "Cosgrove, A.L." ,
+					"given": "M."
+				},
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2021",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Bilingualism and aging: A focused neuroscientific review",
+			"container-title": "Journal of Neurolinguistics",
+			"page":  ,
+			"volume": "54",
+			"issue": "100890",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Wu, Y. J." ,
+					"given": "M."
+				},
+				{
+					"family": "Thierry, G. <b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2020",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Stronger right hemisphere functional connectivity supports executive aspects of language in older adults",
+			"container-title": "Brain and Language",
+			"page":  ,
+			"volume": "206",
+			"issue": "104771",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "Gertel, V. H." ,
+					"given": "M."
+				},
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Diaz, M. T. <b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2020",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Investigating the effects of phonological neighbours on word retrieval and phonetic variation in word naming and picture naming paradigms",
+			"container-title": "Language, Cognition and Neuroscience",
+			"page": "980-991" ,
+			"volume": "35",
+			"issue": "8",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Carlson, M. T." ,
+					"given": "M."
+				},
+				{
+					"family": "Diaz, M. T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2020",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Task difficulty modulates age-related differences in the behavioral and neural bases of language production",
+			"container-title": "Neuropsychologia",
+			"page": "254-273" ,
+			"volume": "124",
+			"issue": ,
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Eppes, A." ,
+					"given": "M."
+				},
+				{
+					"family": "Diaz M. T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2019",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Task difficulty modulates brain-behavior correlations in language production and cognitive control: Behavioral and fMRI evidence from a phonological go/no-go picture-naming paradigm",
+			"container-title": "Cognitive, Affective, & Behavioral Neuroscience",
+			"page": "964-981" ,
+			"volume": "18",
+			"issue": "5",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Eppes, A." ,
+					"given": "M."
+				},
+				{
+					"family": "Beatty-Martínez, A." ,
+					"given": "M."
+				},
+				{
+					"family": "Navarro-Torres, C." ,
+					"given": "M."
+				},
+				{
+					"family": "Diaz, M. T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2018",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Does speaking two dialects in daily life affect executive functions? An Event-Related Potential study",
+			"container-title": "PloS one",
+			"page": "e0150492" ,
+			"volume": "11",
+			"issue": "3",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "Wu, Y. J." ,
+					"given": "M."
+				},
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Guo, T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2016",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "ERPs evidence for the relationship between fluid intelligence and cognitive control",
+			"container-title": "Neuroreport",
+			"page": "379-383" ,
+			"volume": "27",
+			"issue": ,
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "Lu, D." ,
+					"given": "M."
+				},
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Kang, C." ,
+					"given": "M."
+				},
+				{
+					"family": "Guo, T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2016",
+						2
+					]
+				]
+			}
+	},
+	{
+			"id": ,
+			"type": "article-journal",
+			"title": "Improving proactive control with training on language switching in bilinguals",
+			"container-title": "NeuroReport",
+			"page": "354-359" ,
+			"volume": "26",
+			"issue": "6",
+			"source": ,
+			"abstract": ,
+			"DOI": ,
+			"author": [
+				{
+					"family": "<b>Zhang, H.</b>" ,
+					"given": "H."
+				},
+				{
+					"family": "Kang C." ,
+					"given": "M."
+				},
+				{
+					"family": "Wu Y. J." ,
+					"given": "M."
+				},
+				{
+					"family": "Ma F." ,
+					"given": "M."
+				},
+				{
+					"family": "Guo, T.<b><sup>*</sup></b>" ,
+					"given": "M."
+				}
+			],
+			"issued": {
+				"date-parts": [
+					[
+						"2015",
 						2
 					]
 				]
