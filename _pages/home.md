@@ -1,6 +1,7 @@
 ---
 title: "Home"
 layout: homelay
+image: lab-introduction.png
 excerpt: "RT2 Lab at Institut Curie"
 sitemap: false
 permalink: /
