@@ -31,159 +31,159 @@
 	},
 
 	{
-			"id": ,
-			"type": "article-journal",
-			"title": "Resting state network segregation modulates age-related differences in language production",
-			"container-title": "Neurobiology of Language",
-			"page": "1-52" ,
-			"volume": ,
-			"issue": ,
-			"source": ,
-			"abstract": ,
-			"DOI": ,
-			"author": [
-				{
-					"family": "<b>Zhang, H.<sup>*</sup></b>" ,
-					"given": "H."
-				},
-				{
-					"family": "Diaz, M." ,
-					"given": "M."
-				}
-			],
-			"issued": {
-				"date-parts": [
-					[
-						"2023",
-						2
-					]
-				]
+		"id": ,
+		"type": "article-journal",
+		"title": "Resting state network segregation modulates age-related differences in language production",
+		"container-title": "Neurobiology of Language",
+		"page": "1-52" ,
+		"volume": ,
+		"issue": ,
+		"source": ,
+		"abstract": ,
+		"DOI": ,
+		"author": [
+			{
+				"family": "<b>Zhang, H.<sup>*</sup></b>" ,
+				"given": "H."
+			},
+			{
+				"family": "Diaz, M." ,
+				"given": "M."
 			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					2
+				]
+			]
+		}
 	},
 
 	{
-			"id": ,
-			"type": "article-journal",
-			"title": "Multivariate decoding methods reveal how speaking two dialects affects executive functions",
-			"container-title": "European Journal of Neuroscience",
-			"page": "840-853" ,
-			"volume": "57",
-			"issue": "5",
-			"source": ,
-			"abstract": ,
-			"DOI": ,
-			"author": [
-				{
-					"family": "Wu, Y. J." ,
-					"given": "M."
-				},
-				{
-					"family": "Dang, Q." ,
-					"given": "M."
-				},
-				{
-					"family": "Zhang, Z." ,
-					"given": "M."
-				},
-				{
-					"family": "<b>Zhang, H.</b>" ,
-					"given": "H."
-				},
-				{
-					"family": "Guo, T.<b><sup>*</sup></b>" ,
-					"given": "M."
-				}
-			],
-			"issued": {
-				"date-parts": [
-					[
-						"2023",
-						2
-					]
-				]
+		"id": ,
+		"type": "article-journal",
+		"title": "Multivariate decoding methods reveal how speaking two dialects affects executive functions",
+		"container-title": "European Journal of Neuroscience",
+		"page": "840-853" ,
+		"volume": "57",
+		"issue": "5",
+		"source": ,
+		"abstract": ,
+		"DOI": ,
+		"author": [
+			{
+				"family": "Wu, Y. J." ,
+				"given": "M."
+			},
+			{
+				"family": "Dang, Q." ,
+				"given": "M."
+			},
+			{
+				"family": "Zhang, Z." ,
+				"given": "M."
+			},
+			{
+				"family": "<b>Zhang, H.</b>" ,
+				"given": "H."
+			},
+			{
+				"family": "Guo, T.<b><sup>*</sup></b>" ,
+				"given": "M."
 			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					2
+				]
+			]
+		}
 	},
 
 	{
-			"id": ,
-			"type": "article-journal",
-			"title": "Editorial: Cognitive factors in bilingual language processing",
-			"container-title": "Frontiers in Psychology",
-			"page":  ,
-			"volume": "13:1055759",
-			"issue": ,
-			"source": ,
-			"abstract": ,
-			"DOI": "10.3389/fpsyg.2022.1055759",
-			"author": [
-				{
-					"family": "Wu, Y. J.<b><sup>*</sup></b>" ,
-					"given": "M."
-				},
-				{
-					"family": "Miwa K" ,
-					"given": "M."
-				},
-				{
-					"family": "<b>Zhang, H.</b>" ,
-					"given": "H."
-				},
-			],
-			"issued": {
-				"date-parts": [
-					[
-						"2022",
-						2
-					]
+		"id": ,
+		"type": "article-journal",
+		"title": "Editorial: Cognitive factors in bilingual language processing",
+		"container-title": "Frontiers in Psychology",
+		"page":  ,
+		"volume": "13:1055759",
+		"issue": ,
+		"source": ,
+		"abstract": ,
+		"DOI": "10.3389/fpsyg.2022.1055759",
+		"author": [
+			{
+				"family": "Wu, Y. J.<b><sup>*</sup></b>" ,
+				"given": "M."
+			},
+			{
+				"family": "Miwa K" ,
+				"given": "M."
+			},
+			{
+				"family": "<b>Zhang, H.</b>" ,
+				"given": "H."
+			},
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					2
 				]
-			}
+			]
+		}
 	},
 
 
 	{
-			"id": ,
-			"type": "article-journal",
-			"title": "Neural sensitivity to semantic neighbors is stable across the adult lifespan",
-			"container-title": "Neuropsychologia",
-			"page": "108237" ,
-			"volume": ,
-			"issue": ,
-			"source": ,
-			"abstract": ,
-			"DOI": ,
-			"author": [
-				{
-					"family": "Diaz, M. T.<b><sup>*</sup></b>" ,
-					"given": "M."
-				},
-				{
-					"family": "<b>Zhang, H.</b>" ,
-					"given": "H."
-				},
-				{
-					"family": "Cosgrove, A. L." ,
-					"given": "M."
-				}
-				{
-					"family": "Gertel, V. H." ,
-					"given": "M."
-				}
-				{
-					"family": "Troutman, S. B." ,
-					"given": "M."
-				}
-				{
-					"family": "Karimi, H." ,
-					"given": "M."
-				}
-			],
-			"issued": {
-				"date-parts": [
-					[
-						"2022",
-						2
-					]
-				]
+		"id": ,
+		"type": "article-journal",
+		"title": "Neural sensitivity to semantic neighbors is stable across the adult lifespan",
+		"container-title": "Neuropsychologia",
+		"page": "108237" ,
+		"volume": ,
+		"issue": ,
+		"source": ,
+		"abstract": ,
+		"DOI": ,
+		"author": [
+			{
+				"family": "Diaz, M. T.<b><sup>*</sup></b>" ,
+				"given": "M."
+			},
+			{
+				"family": "<b>Zhang, H.</b>" ,
+				"given": "H."
+			},
+			{
+				"family": "Cosgrove, A. L." ,
+				"given": "M."
 			}
-	},
+			{
+				"family": "Gertel, V. H." ,
+				"given": "M."
+			}
+			{
+				"family": "Troutman, S. B." ,
+				"given": "M."
+			}
+			{
+				"family": "Karimi, H." ,
+				"given": "M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					2
+				]
+			]
+		}
+	}
 ]
