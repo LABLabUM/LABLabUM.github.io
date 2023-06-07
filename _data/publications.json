@@ -2,36 +2,28 @@
 	{
 		"id": ,
 		"type": "article-journal",
-		"title": "Segmentation of Nuclei in Histopathology Images by Deep Regression of the Distance Map",
-		"container-title": "IEEE Transactions on Medical Imaging",
-		"page": "448-459",
-		"volume": "38",
-		"issue": "2",
+		"title": "Task difficulty modulates age-related differences in functional connectivity during word production",
+		"container-title": "Brain and Language",
+		"page": ,
+		"volume": "240",
+		"issue": "105263",
 		"source": ,
 		"abstract": ,
 		"DOI": ,
 		"author": [
 			{
-				"family": "Naylor",
-				"given": "P."
+				"family": "Zhang",
+				"given": "H."
 			},
 			{
-				"family": "Laé",
+				"family": "Diaz",
 				"given": "M."
-			},
-			{
-				"family": "Reyal",
-				"given": "F."
-			},
-			{
-				"family": "Walter",
-				"given": "T."
 			}
 		],
 		"issued": {
 			"date-parts": [
 				[
-					"2019",
+					"2023",
 					2
 				]
 			]
