@@ -30,22 +30,7 @@ permalink: /publications/
             "{{ publi.title }}",
 
             <!-- container -->
-            <b>{{ publi.container-title }}</b>
-                
-            <!-- volume -->
-            {% if publi.volume %}
-                "{{ publi.volume }}",   
-            {% endif %}
-                
-            <!-- issue -->
-            {% if publi.issue %}
-                "{{ publi.issue }}",   
-            {% endif %}    
-                
-            <!-- page -->
-            {% if publi.page %}
-                "{{ publi.page }}",   
-            {% endif %}      
+            <b>{{ publi.container-title }}</b>   
                 
             <!-- DOI -->
             {% if publi.DOI %}
