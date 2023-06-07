@@ -20,7 +20,6 @@ permalink: /publications/
             {% assign authors = "" | split:"/" %}
             {% for author in publi.author %}
                 {% assign authors = authors | push: author.family %}
-                {% assign authors = authors | push: author.given %}
             {% endfor %}
             {{ authors | array_to_sentence_string }},
                 
