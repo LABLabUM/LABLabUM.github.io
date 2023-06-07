@@ -19,7 +19,7 @@
 				"family": "Kang C." ,
 				"given": "M."
 			},
-      {
+      			{
 				"family": "Guo T.<b><sup>*</sup></b>" ,
 				"given": "M."
 			}
@@ -33,7 +33,7 @@
 			]
 		}
 	},
-  {
+  	{
 		"id": ,
 		"type": "article-journal",
 		"title": "Task difficulty modulates age-related differences in functional connectivity during word production",
@@ -53,11 +53,11 @@
 				"family": "Ma F." ,
 				"given": "M."
 			},
-      {
+      			{
 				"family": " Chen B." ,
 				"given": "M."
 			},
-      {
+      			{
 				"family": "Guo T.<b><sup>*</sup></b>" ,
 				"given": "M."
 			}
