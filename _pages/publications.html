@@ -19,9 +19,9 @@ permalink: /publications/
             <!-- authors -->
             {% assign authors = "" | split:"/" %}
             {% for author in publi.author %}
-                {% assign authors = authors | push: author.family author.given %}
+                {% assign authors = authors | push: author.family %}
             {% endfor %}
-            {{ authors | array_to_sentence_string }},
+            {{ authors | array_to_sentence_string }}
 
             <!-- issued date -->
             ({{ publi.issued.date-parts | jsonify | slice: 3,4 }}),
