@@ -32,7 +32,11 @@ permalink: /publications/
             <!-- container -->
             <b>{{ publi.container-title }}</b>
 
-
+            <!-- page -->
+            {% if publi.page %}
+                <a>{{publi.page}},</a>
+            {% endif %}
+                
             <!-- DOI -->
             {% if publi.DOI %}
                 <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
