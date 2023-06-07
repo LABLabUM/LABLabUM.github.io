@@ -53,6 +53,14 @@ permalink: /publications/
             {% endif %}
             </a>
         </div>
+        <div id="collapse{{forloop.index}}" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p>{{ publi.abstract }}</p>
+
+                <a class="btn btn-outline-primary" href="https://doi.org/{{publi.DOI}}"
+                   role="button" target="blank">Link</a>
+            </div>
+        </div>
     {% endfor %}
     </div>
 </div>
