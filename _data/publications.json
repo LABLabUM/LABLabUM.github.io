@@ -187,7 +187,7 @@
 		}
 	},
 
-{
+	{
 		"id": ,
 		"type": "article-journal",
 		"title": "The use of a second language enhances the neural efficiency of inhibitory control: an ERP study",
@@ -228,8 +228,9 @@
 				]
 			]
 		}
-	}	
-{
+	},
+
+	{
 		"id": ,
 		"type": "article-journal",
 		"title": "Language immersion and language training: Two paths to enhanced language regulation and cognitive control",
@@ -388,6 +389,7 @@
 			]
 		}
 	},
+
 	{
 		"id": ,
 		"type": "article-journal",
