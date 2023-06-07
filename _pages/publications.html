@@ -23,14 +23,15 @@ permalink: /publications/
             {% endfor %}
             {{ authors | array_to_sentence_string }},
 
+            <!-- issued date -->
+            ({{ publi.issued.date-parts | jsonify | slice: 3,4 }}),
+                
             <!-- title with link -->
             "{{ publi.title }}",
 
             <!-- container -->
             <b>{{ publi.container-title }}</b>
 
-            <!-- issued date -->
-            ({{ publi.issued.date-parts | jsonify | slice: 3,4 }}),
 
             <!-- DOI -->
             {% if publi.DOI %}
