@@ -184,48 +184,5 @@
 					]
 				]
 			}
-	},
-
-	{
-			"id": ,
-			"type": "article-journal",
-			"title": "The use of a second language enhances the neural efficiency of inhibitory control: an ERP study",
-			"container-title": "Bilingualism: Language and Cognition",
-			"page": "163-180" ,
-			"volume": "25",
-			"issue": "1",
-			"source": ,
-			"abstract": ,
-			"DOI": ,
-			"author": [
-				{
-					"family": "Kałamała, P." ,
-					"given": "M."
-				},
-				{
-					"family": "Walther, J." ,
-					"given": "M."
-				},
-				{
-					"family": "<b>Zhang, H.</b>" ,
-					"given": "H."
-				},
-				{
-					"family": "Senderecka, M." ,
-					"given": "M."
-				},
-				{
-					"family": " Wodniecka, Z. <b><sup>*</sup></b>" ,
-					"given": "M."
-				}
-			],
-			"issued": {
-				"date-parts": [
-					[
-						"2022",
-						2
-					]
-				]
-			}
 	}
 ]
