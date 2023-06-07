@@ -1,9 +1,12 @@
 [
 	{
 		"type": "article-journal",
-		"title": "Task difficulty modulates age-related differences in functional connectivity during word production": "Brain and Language",
+		"title": "Task difficulty modulates age-related differences in functional connectivity during word production"
+		"container-title": "Brain and Language",
+		"page": "448-459",
 		"volume": "240",
 		"issue": "105263",
+		"DOI": "10.1109/TMI.2018.2865709",
 		"author": [
 			{
 				"family": "Zhang",
