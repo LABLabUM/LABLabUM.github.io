@@ -1,1 +1,74 @@
-
+[
+	{
+		"id": ,
+		"type": "article-journal",
+		"title": "Near-Infrared spectroscopy evidences for Simon Effect",
+		"container-title": "Journal of Beijing Normal University (Natural Science)(北京师范大学学报自然科学版)",
+		"page": ,
+		"volume": "2",
+		"issue": "016",
+		"source": ,
+		"abstract": ,
+		"DOI": ,
+		"author": [
+			{
+				"family": "<b>Zhang, H.</b>" ,
+				"given": "H."
+			},
+			{
+				"family": "Kang C." ,
+				"given": "M."
+			},
+      {
+				"family": "Guo T.<b><sup>*</sup></b>" ,
+				"given": "M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					2
+				]
+			]
+		}
+	},
+  {
+		"id": ,
+		"type": "article-journal",
+		"title": "Task difficulty modulates age-related differences in functional connectivity during word production",
+		"container-title": "Brain and Language",
+		"page": ,
+		"volume": "240",
+		"issue": "105263",
+		"source": ,
+		"abstract": ,
+		"DOI": ,
+		"author": [
+			{
+				"family": "<b>Zhang, H.</b>" ,
+				"given": "H."
+			},
+			{
+				"family": "Ma F." ,
+				"given": "M."
+			},
+      {
+				"family": " Chen B." ,
+				"given": "M."
+			},
+      {
+				"family": "Guo T.<b><sup>*</sup></b>" ,
+				"given": "M."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2012",
+					2
+				]
+			]
+		}
+	}
+ ]
