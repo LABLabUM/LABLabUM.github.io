@@ -30,27 +30,28 @@ permalink: /publications/
             "{{ publi.title }}",
 
             <!-- container -->
-            <b>{{ publi.container-title }}</b>,
+            <b>{{ publi.container-title }}</b>
                 
             <!-- volume -->
             {% if publi.volume %}
-                {{publi.volume}},
+                ,{{publi.volume}}
             {% endif %}
                 
             <!-- issue -->
             {% if publi.issue %}
-                {{publi.issue}},
+                ,{{publi.issue}}
             {% endif %}
 
             <!-- page -->
             {% if publi.page %}
-                {{publi.page}},
+                ,{{publi.page}}
             {% endif %}
                 
             <!-- DOI -->
             {% if publi.DOI %}
-                <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
+                <a href="https://doi.org/{{publi.DOI}}">,DOI:{{publi.DOI}}</a>
             {% endif %}
+            .
             </a>
         </div>
 
