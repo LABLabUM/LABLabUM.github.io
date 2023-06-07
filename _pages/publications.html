@@ -27,10 +27,10 @@ permalink: /publications/
             "{{ publi.title }}",
 
             <!-- container -->
-            <b>{{ publi.container-title }}</b>
+            <b>{{ publi.container-title }}</b>,
 
             <!-- issued date -->
-            ({{ publi.issued.date-parts | jsonify | slice: 3,4 }}),
+            ({{ publi.issued.date-parts | jsonify | slice: 3,4 }})
                 
             <!-- volume -->
             {% if publi.volume %}
