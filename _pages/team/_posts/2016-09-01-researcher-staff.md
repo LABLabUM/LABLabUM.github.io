@@ -14,11 +14,11 @@ social:
     orcid: https://orcid.org/
     research-gate: https://www.researchgate.net/
 education:
-- __Ph.D.__, Psychology & Language Science Dual Title, Specialization in Cognitive and Affective Neuroscience, The Pennsylvania State University, USA
+- <b>Ph.D.</b>, Psychology & Language Science Dual Title, Specialization in Cognitive and Affective Neuroscience, The Pennsylvania State University, USA
 
-- __M.S.__, Fundamental Psychology, Beijing Normal University, China
+- <b>M.S.</b>, Fundamental Psychology, Beijing Normal University, China
 
-- __B.S.__, Psychology, Shaanxi Normal University, China
+- <b>B.S.</b>, Psychology, Shaanxi Normal University, China
 
 position:
 - January 2022 –Present, Assistant Professor, Centre for Cognitive and Brain Sciences, University of Macau.
