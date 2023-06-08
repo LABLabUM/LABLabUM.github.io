@@ -3,7 +3,7 @@ layout: member
 category: staff
 title: Haoyun Zhang
 image: haoyun-zhang.png
-role: Assistant Professor
+role: Principal Investigator
 permalink: 'team/prof-haoyun-zhang'
 email: haoyunzhang@um.edu.mo
 place: Room 1004d, N21, University of Macau
