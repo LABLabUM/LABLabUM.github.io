@@ -14,7 +14,12 @@ social:
     orcid: https://orcid.org/
     research-gate: https://www.researchgate.net/
 education:
-- Education
+- Ph.D., Psychology & Language Science Dual Title, Specialization in Cognitive and Affective Neuroscience, The Pennsylvania State University, USA
+
+- M.S., Fundamental Psychology, Beijing Normal University, China
+
+- B.S., Psychology, Shaanxi Normal University, China
+
 ---
 
 __position__
