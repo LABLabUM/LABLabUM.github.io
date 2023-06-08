@@ -60,14 +60,17 @@ layout: default
         <h3>Education</h3>
         <ul class="list-unstyled">
             {% for education in page.education %}
-                <li>{{education}}</li>
+                <li style="list-style-type:disc>{{education}}</li>
+                <br></br>
             {% endfor %}
         </ul>
     </div>
 
     <!-- Bio -->
-    <div class="row">
-        <h3>Bio</h3>
-        {{ content }}
-    </div>
+    {% if page.position %}
+        <div class="row">
+            <h3>Position</h3>
+            {{ content }}
+        </div>
+    {% endif %}
 </div>
