@@ -24,9 +24,15 @@ layout: default
 
         <!-- Social -->
         <ul class="list-inline list-unstyled">
-            <li>Place:{{page.place}}</li><br>
-            <li>Number:{{page.phone}}</li><br>
-            <li>Email:{{page.email}}</li><br>
+            {% if page.position %}
+                <li>Place: {{page.place}}</li><br>
+            {% endif %}
+            {% if page.position %}
+                <li>Number: {{page.phone}}</li><br>
+            {% endif %}
+            {% if page.position %}
+                <li>Email: {{page.email}}</li><br>
+            {% endif %}
         </ul>
     </div>
 
