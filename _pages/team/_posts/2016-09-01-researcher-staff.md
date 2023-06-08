@@ -6,6 +6,8 @@ image: haoyun-zhang.png
 role: Assistant Professor
 permalink: 'team/prof-haoyun-zhang'
 email: haoyunzhang@um.edu.mo
+place: Room 1004d, N21, University of Macau
+phone: (853) 8822-9212
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
