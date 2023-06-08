@@ -11,22 +11,22 @@ permalink: /team/
 <!-- Staff -->
 
 <h2><a id="staff"></a>Staff</h2>
-<div class="card team-member-card">
-    <div class="row mt-3">
-        {% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
-        {% for member in members %}
-            <div class="team_graph">
-                <a href={{member.url}}>
-                    <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                        class="card-img img-responsive img-thumbnail"
-                        style="width:100%;height:80%"/>
-                </a>
-                <span style='width:100%;'>
-                <center>{{ member.title }}</center>
-                <center>{{ member.role }}</center>
-                </span>
-            </div>
-     </div>
+{% assign num = site.posts.size | where: 'category', 'staff' | sort: 'date' %}
+{% assign rows = num | divided_by: 2.0 | ceil %}
+<div style='width:100%;height:rows*300px'>
+    {% assign num = site.posts | where: 'category', 'staff' | sort: 'date' %}
+    {% for member in members %}
+        <div class="team_graph">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+                    class="card-img img-responsive img-thumbnail"
+                    style="width:100%;height:80%"/>
+            </a>
+            <span style='width:100%;'>
+            <center>{{ member.title }}</center>
+            <center>{{ member.role }}</center>
+            </span>
+        </div>
 </div>
 {% endfor %}
 
