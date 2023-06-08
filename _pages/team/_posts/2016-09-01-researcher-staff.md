@@ -5,6 +5,7 @@ title: Haoyun Zhang
 image: haoyun-zhang.png
 role: Assistant Professor
 permalink: 'team/prof-haoyun-zhang'
+email: haoyunzhang@um.edu.mo
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
