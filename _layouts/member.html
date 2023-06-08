@@ -37,16 +37,18 @@ layout: default
     </div>
 
     <!-- Education -->
-    <div class="row">
-        <h3>Education</h3>
-        <ul class="list-unstyled">
-            {% for education in page.education %}
-                <li>{{education}}</li>
-                <br>
-            {% endfor %}
-        </ul>
-    </div>
-
+    {% if page.education %}
+        <div class="row">
+            <h3>Education</h3>
+            <ul class="list-unstyled">
+                {% for education in page.education %}
+                    <li>{{education}}</li>
+                    <br>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+    
     <!-- position -->
     {% if page.position %}
         <div class="row">
