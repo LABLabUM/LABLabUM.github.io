@@ -46,7 +46,6 @@ course:
 - Brain Simulation and Neuroimaging Techniques (University of Macau, 2022-present); 
 - Human Learning and Cognition (University of Macau, 2022-present); 
 - Introduction to Cognitive Psychology (the Pennsylvania State University, Spring 2017)
-
 ---
 
 __position__
