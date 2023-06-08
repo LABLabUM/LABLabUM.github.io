@@ -33,8 +33,8 @@ permalink: /team/
 <h2><a id="student"></a>Students</h2>
 <div class="card team-member-card">
     <div class="row mt-3">
-        {% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
-        {% for member in members %}
+            {% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
+            {% for member in members %}
             <div class="team_graph">
                 <a href={{member.url}}>
                     <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
