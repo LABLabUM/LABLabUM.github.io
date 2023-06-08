@@ -11,9 +11,8 @@ permalink: /team/
 <!-- Staff -->
 
 <h2><a id="staff"></a>Staff</h2>
-{% assign num = site.posts.size | where: 'category', 'staff' | sort: 'date' %}
-{% assign rows = num | divided_by: 2.0 | ceil %}
-<div style='width:100%;height:rows*300px'>
+<div class="card team-member-card">
+    <div class="row mt-3">
     {% assign num = site.posts | where: 'category', 'staff' | sort: 'date' %}
     {% for member in members %}
         <div class="team_graph">
@@ -27,8 +26,9 @@ permalink: /team/
             <center>{{ member.role }}</center>
             </span>
         </div>
+     {% endfor %}
+     </div>
 </div>
-{% endfor %}
 
 <!-- Students -->
 
@@ -48,7 +48,6 @@ permalink: /team/
                     <center>{{ member.role }}</center>
                 </span>
             </div>
+        {% endfor %}
      </div>
 </div>
-
-{% endfor %}
