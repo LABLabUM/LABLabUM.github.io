@@ -60,17 +60,48 @@ layout: default
         <h3>Education</h3>
         <ul class="list-unstyled">
             {% for education in page.education %}
-                <li style="list-style-type:disc>{{education}}</li>
+                <li>{{education}}</li>
                 <br></br>
             {% endfor %}
         </ul>
     </div>
 
-    <!-- Bio -->
+    <!-- position -->
     {% if page.position %}
         <div class="row">
             <h3>Position</h3>
-            {{ content }}
+            <ul class="list-unstyled">
+                {% for education in page.education %}
+                    <li>{{education}}</li>
+                    <br></br>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+    
+    <!-- awards -->
+    {% if page.awards %}
+        <div class="row">
+            <h3>Awards and Honors</h3>
+            <ul class="list-unstyled">
+                {% for awards in page.awards %}
+                    <li>{{awards}}</li>
+                    <br></br>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <!-- research interests -->
+    {% if page.research_interests %}
+        <div class="row">
+            <h3>Research interests</h3>
+            <ul class="list-unstyled">
+                {% for interests in page.research_interests %}
+                    <li>{{interests}}</li>
+                    <br></br>
+                {% endfor %}
+            </ul>
         </div>
     {% endif %}
 </div>
