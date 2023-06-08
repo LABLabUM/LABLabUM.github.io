@@ -1,10 +1,10 @@
 ---
 layout: member
 category: staff
-title: Researcher Name
+title: Prof. Haoyun Zhang
 image: researcher.png
-role: Lab Director
-permalink: 'team/researcher-name'
+role: Assistant Professor
+permalink: 'team/prof-haoyun-zhang'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -17,4 +17,13 @@ education:
  - Education
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Ph.D., Psychology & Language Science Dual Title, Specialization in Cognitive and Affective Neuroscience, The Pennsylvania State University, USA
+
+M.S., Fundamental Psychology, Beijing Normal University, China
+
+B.S., Psychology, Shaanxi Normal University, China
+
+__position__
+January 2022 –Present, Assistant Professor, Centre for Cognitive and Brain Sciences, University of Macau.
+August 2019 – December 2021, Assistant Director of Human Imaging, Social, Life, & Engineering Sciences Imaging Center (SLEIC), The Pennsylvania State University, USA
+August 2019 – December 2021, Assistant Research Professor, Social, Life, & Engineering Sciences Imaging Center (SLEIC), The Pennsylvania State University, USA
