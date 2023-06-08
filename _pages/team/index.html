@@ -13,7 +13,7 @@ permalink: /team/
 <h2><a id="staff"></a>Staff</h2>
 <div class="card team-member-card">
     <div class="row mt-3">
-    {% assign num = site.posts | where: 'category', 'staff' | sort: 'date' %}
+    {% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
     {% for member in members %}
         <div class="team_graph">
             <a href={{member.url}}>
