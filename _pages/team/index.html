@@ -12,7 +12,7 @@ permalink: /team/
 
 <h2><a id="staff"></a>Staff</h2>
 <div class="card team-member-card">
-    <div>
+    <div class="row mt-3">
     {% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
     {% for member in members %}
         <div class="team_graph">
@@ -32,7 +32,7 @@ permalink: /team/
 
 <h2><a id="student"></a>Students</h2>
 <div class="card team-member-card">
-    <div>
+    <div class="row mt-3">
     {% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
     {% for member in members %}
         <div class="team_graph",style="text-align: center;">
