@@ -1,7 +1,7 @@
 ---
 layout: member
 category: staff
-title: Prof. Haoyun Zhang
+title: Haoyun Zhang
 image: haoyun-zhang.png
 role: Assistant Professor
 permalink: 'team/prof-haoyun-zhang'
