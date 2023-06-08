@@ -42,15 +42,4 @@ awards:
 research_interests:
 - Cognitive abilities, such as executive function and language production, decline with age. Older adults typically struggle to memorize items, inhibit irrelevant information, and/or produce fluent speech. These age-associated declines interfere with older adults’ successful communication and social interactions. To help alleviate these problems, my research investigates factors that contribute to age-related declines in language production, and their neural bases, mainly from four perspectives, 1) Phonological characteristics, 2) Cognitive control demands, 3) Functional connectivity, and 4) Bilingualism. I use various behavioral and neuroscience methods to investigate my research questions, including Electroencephalography (EEG), and Functional Magnetic Resonance Imaging (fMRI).
 
-course:
-- Brain Simulation and Neuroimaging Techniques (University of Macau, 2022-present); 
-- Human Learning and Cognition (University of Macau, 2022-present); 
-- Introduction to Cognitive Psychology (the Pennsylvania State University, Spring 2017)
-- 
 ---
-
-__position__
-
-January 2022 –Present, Assistant Professor, Centre for Cognitive and Brain Sciences, University of Macau.
-August 2019 – December 2021, Assistant Director of Human Imaging, Social, Life, & Engineering Sciences Imaging Center (SLEIC), The Pennsylvania State University, USA
-August 2019 – December 2021, Assistant Research Professor, Social, Life, & Engineering Sciences Imaging Center (SLEIC), The Pennsylvania State University, USA
