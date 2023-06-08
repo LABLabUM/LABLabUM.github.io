@@ -2,7 +2,7 @@
 layout: member
 category: student
 title: Keyi KANG
-image: keyi-kang.hpg
+image: keyi-kang.jpg
 role: PhD Student
 permalink: 'team/keyi-kang'
 email: yc27335@um.edu.mo
