@@ -1,0 +1,28 @@
+---
+title: "For Participants"
+layout: default
+excerpt: "RT2 Lab at Institut Curie"
+sitemap: false
+permalink: /for-participants-chi.html
+---
+
+</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="{{ site.url }}{{ site.baseurl }}/for-participants-eng">English</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/for-participants-chi">中文</a></li>
+	  </ul>
+</div>
+
+<h1>FAQ about MRI</h1>
+
+<ul class="list-unstyled">
+    {% for article in site.data.news %}
+        <li class="media">
+            <div class="media-body">
+            <h4 class="mt-0 mb-1">{{ article.title }}</h4>
+            {{ article.content }}
+            </div>
+        </li>
+    {% endfor %}
+</ul>
