@@ -1,10 +1,11 @@
 ---
 layout: member
 category: student
-title: Researcher Name
-image: researcher.png
+title: Keyi KANG
+image: keyi-kang.hpg
 role: PhD Student
-permalink: 'team/researcher-name'
+permalink: 'team/keyi-kang'
+email: yc27335@um.edu.mo
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -13,8 +14,8 @@ social:
     website:
     orcid: https://orcid.org/
     research-gate: https://www.researchgate.net/
-education:
- - Education
+research_interests:
+- Brain and language cognition
+- Age-related cognitive functional decline
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
