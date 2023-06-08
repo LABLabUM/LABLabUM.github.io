@@ -60,18 +60,6 @@ layout: default
         </div>
     {% endif %}
     
-    <!-- course taught -->
-    {% if page.course %}
-        <div class="row">
-            <h3>Course taught</h3>
-            <ul class="list-unstyled">
-                {% for course in page.course %}
-                    <li>{{course}}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}    
-    
     <!-- research interests -->
     {% if page.research_interests %}
         <div class="row">
@@ -97,5 +85,4 @@ layout: default
             </ul>
         </div>
     {% endif %}
-
 </div>
