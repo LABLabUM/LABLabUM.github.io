@@ -1,19 +1,50 @@
- - title: "什么是MRI"
+ - title: "什麼是MRI?"
    tags:
      - some
      - tags
-   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-     Eu turpis egestas pretium aenean. Luctus venenatis lectus magna fringilla
-     urna porttitor. Lorem ipsum dolor sit amet. Pellentesque massa placerat
-     duis ultricies. Commodo viverra maecenas accumsan lacus vel.
-     
- - title: "Another great thing"
+   content: 磁共振成像(MRI)是一種非侵入性技術，用於收集身體內部結構(如大腦)的圖像。
+
+ - title: "MRI是否安全？"
    tags:
      - some
      - tags
-   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-     Eu turpis egestas pretium aenean. Luctus venenatis lectus magna fringilla
-     urna porttitor. Lorem ipsum dolor sit amet. Pellentesque massa placerat
-     duis ultricies. Commodo viverra maecenas accumsan lacus vel.
+   content: 核磁共振成像對大多數人來說是安全的。在實驗之前，您將填寫一份實驗表格，
+            以確定您是否有任何現有的狀況會影響您在掃描期間的安全或舒適。例如，
+            有金屬植入物或起搏器的人就不能參加。我們也建議幽閉恐懼症患者不要參加。
+            核磁共振成像不涉及x射線，暴露在輻射中也沒有與核磁共振成像相關的風險。
+            此外，我們的核磁共振不使用造影劑(例如釓)，也不需要服用任何藥物。
+
+ - title: "做核磁共振檢查時該怎麽穿著？"
+   tags:
+     - some
+     - tags
+   content: 穿舒適、寬松的衣服。請避免穿有金屬扣或拉鏈的衣服。
+
+ - title: "核磁共振檢查會是什麽樣的?"
+   tags:
+     - some
+     - tags
+   content: 研究技術人員將幫助您在有襯墊的掃描臺上找到一個舒適的位置。一個小裝置(稱為「頭部線圈」)將安裝在你的頭上。
+           這個裝置將使我們能夠產生大腦的詳細圖像。然後，技術人員將緩慢地將掃描臺移動到一個大的圓柱形管中，
+           在那裏將收集圖像。在掃描過程中，機器會產生短時間的噪音。我們會為您提供耳機或耳塞，以減少噪音的強度。
+           我們將回答您的所有問題，並在實驗期間通過對講系統與您溝通。
+
+ - title: "我可以帶朋友或家人去看掃描嗎?"
+   tags:
+      - some
+      - tags
+   content: 可以，但是他們會被要求在一個單獨的房間裏等候，直到實驗結束。
+
+ - title: "核磁共振會疼嗎?"
+   tags:
+     - some
+     - tags
+   content: 核磁共振成像沒有疼痛，但是，因為你需要在掃描期間完全靜止，你可能會因為保持這個姿勢而感到輕微的不適。
+
+ - title: "實驗需要進行多長時間？"
+   tags:
+     - some
+     - tags
+   content: 實驗將花費大約一個小時，其中包括裝置設置和進行實驗的時間。
+
+
