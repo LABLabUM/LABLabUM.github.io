@@ -16,8 +16,8 @@ permalink: /news.html
             <div class="media-body">
             <h4 class="mt-0 mb-1">{{ article.title }}</h4>
             <p><small>{{ article.date }}</small></p>  
-            <div id="myCarousel" class="carousel slide">
-                 {% if article.images %}
+            {% if article.images %}    
+                <div id="myCarousel" class="carousel slide" style="height:40%;">
                 	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
                         <!-- 轮播（Carousel）指标 -->
                         <ol class="carousel-indicators car">
@@ -47,8 +47,8 @@ permalink: /news.html
                                 {% assign b=b+1 %}
                             {% endfor %}
                         </div>
-                 {% endif %}
-            </div> 
+                </div> 
+            {% endif %}
             {{ article.content }}
             </div>
         </li>
