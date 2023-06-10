@@ -5,7 +5,7 @@ layout: default
 <script src="{{ site.url }}{{ site.baseurl }}/lib/jquery/jquery-1.11.0.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/js/bootstrap.min.js"></script>
 <div id="homeid" class="col-sm-8 ml-0 nopadding-left">
-	<div id="myCarousel" class="carousel slide">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
 		<!-- 轮播（Carousel）指标 -->
 		<ol class="carousel-indicators car">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -13,7 +13,7 @@ layout: default
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>   
 		<!-- 轮播（Carousel）项目 -->
-		<div class="carousel-inner" id="b">
+		<div class="carousel-inner" markdown="0">
 			<div class="item active">
 				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/events1.jpeg" alt="First slide">
 			</div>
