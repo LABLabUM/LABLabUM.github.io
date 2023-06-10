@@ -25,15 +25,19 @@ permalink: /news.html
                 </ol>   
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner" id="b">
-                    <div class="item active">
-                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[0]}}"  />
-                    </div>
-                    <div class="item">
-                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[1]}}"  />
-                    </div>
-                    <div class="item">
-                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[2]}}" />
-                    </div>
+                    {% assign b=0 %}
+                    {% for num in article.images %}
+                        {% if b==0%}
+                           <div class="item active">
+                                <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[b] }}">
+                           </div>
+                        {% else %}
+                           <div class="item">
+                                <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[b] }}" >
+                           </div>
+                        {% end if %}
+                        {% assign b=b+1 %}
+                    {% endfor %}
                 </div>
             </div> 
             {{ article.content }}
