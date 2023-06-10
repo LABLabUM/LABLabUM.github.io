@@ -19,10 +19,10 @@ permalink: /news.html
                         <ol class="carousel-indicators car">
                             {% assign a=0 %}
                             {% for num in article.images%}
-                                {% if a==0%}
-                                    <li data-target="#myCarousel" data-slide-to={{a}} class="active"></li>
+                                {% if a==0 %}
+                                    <li data-target="#myCarousel" data-slide-to="{{a}}" class="active"></li>
                                 {% else %}
-                                    <li data-target="#myCarousel" data-slide-to={{a}}></li>
+                                    <li data-target="#myCarousel" data-slide-to="{{a}}"></li>
                                 {% end if%}
                                 {% assign a=a+1 %}
                             {% endfor%}
@@ -33,11 +33,11 @@ permalink: /news.html
                             {% for num in article.images%}
                                 {% if b==0%}
                                    <div class="item active">
-                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{num}}" alt={{b}}>
+                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{num}}" alt="{{b}}">
                                    </div>
                                 {% else %}
                                    <div class="item active">
-                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{num}}" alt={{b}}>
+                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{num}}" alt="{{b}}">
                                    </div>
                                 {% end if%}
                                 {% assign b=b+1 %}
