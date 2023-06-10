@@ -20,9 +20,9 @@ permalink: /news.html
                             {% assign a=0 %}
                             {% for num in article.images%}
                                 {% if a==0 %}
-                                    <li data-target="#myCarousel" data-slide-to="{{a}}" class="active"></li>
+                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                 {% else %}
-                                    <li data-target="#myCarousel" data-slide-to="{{a}}"></li>
+                                    <li data-target="#myCarousel" data-slide-to="0"></li>
                                 {% end if%}
                                 {% assign a=a+1 %}
                             {% endfor%}
@@ -33,11 +33,11 @@ permalink: /news.html
                             {% for num in article.images%}
                                 {% if b==0%}
                                    <div class="item active">
-                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{num}}" alt="{{b}}">
+                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{num}}" alt="0">
                                    </div>
                                 {% else %}
                                    <div class="item active">
-                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{num}}" alt="{{b}}">
+                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{num}}" alt="0">
                                    </div>
                                 {% end if%}
                                 {% assign b=b+1 %}
