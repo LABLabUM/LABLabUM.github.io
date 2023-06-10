@@ -37,11 +37,11 @@ permalink: /news.html
                             {% for num in article.images %}
                                 {% if b==0%}
                                    <div class="item active">
-                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ num }}" alt="{{b}}">
+                                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ num }}" alt="{{b}}">
                                    </div>
                                 {% else %}
                                    <div class="item">
-                                        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ num }}" alt="{{b}}">
+                                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ num }}" alt="{{b}}">
                                    </div>
                                 {% endif %}
                                 {% assign b=b+1 %}
