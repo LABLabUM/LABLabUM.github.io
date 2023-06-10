@@ -1,6 +1,6 @@
 - date: 05/09/19
   title: "Another great thing"
-  images: events1.jpeg
+  images:  events1.jpeg
   images1: events2.jpeg
   images2: events3.jpeg
   tags:
@@ -17,7 +17,7 @@
   tags:
     - some
     - tags
-  images: events1.jpeg
+  images:  events1.jpeg
   images1: events2.jpeg
   images2: events3.jpeg
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
