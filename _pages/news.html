@@ -27,10 +27,13 @@ permalink: /news.html
                 <div class="carousel-inner" id="b">
                     {% assign b=0 %}
                     <div class="item active">
-                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[b] }}">
+                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[1] }}">
                     </div>
                     <div class="item">
-                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[1] }}" >
+                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[b] }}" >
+                    </div>
+                    <div class="item">
+                        <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[2] }}" >
                     </div>
                 </div>
             </div> 
