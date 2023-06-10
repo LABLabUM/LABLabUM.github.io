@@ -18,6 +18,10 @@
   tags:
     - some
     - tags
+  images:
+    - events1.jpeg
+    - events2.jpeg
+    - events3.jpeg
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Eu turpis egestas pretium aenean. Luctus venenatis lectus magna fringilla
