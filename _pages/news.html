@@ -26,9 +26,11 @@ permalink: /news.html
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner" id="b">
                     {% assign b=0 %}
+                    {% if b==0 %}
                     <div class="item active">
                         <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[1] }}">
                     </div>
+                    {% end if %}
                     <div class="item">
                         <img src="{{ site.url }}{{ site.baseurl }}/images/news/{{ article.images[b] }}" >
                     </div>
