@@ -4,27 +4,26 @@
        - events1.jpeg
        - events2.jpeg
        - events3.jpeg
-  tags:
-    - some
-    - tags
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Eu turpis egestas pretium aenean. Luctus venenatis lectus magna fringilla
-    urna porttitor. Lorem ipsum dolor sit amet. Pellentesque massa placerat
-    duis ultricies. Commodo viverra maecenas accumsan lacus vel.
-
-- date: 03/09/19
-  title: "Something great"
-  tags:
-    - some
-    - tags
-  images:  
        - events4.jpeg
        - events5.jpeg
-       - events6.jpeg
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Eu turpis egestas pretium aenean. Luctus venenatis lectus magna fringilla
-    urna porttitor. Lorem ipsum dolor sit amet. Pellentesque massa placerat
-    duis ultricies. Commodo viverra maecenas accumsan lacus vel.
+       - events6.jpeg       
+  tags:
+    - some
+    - tags
+  content: The problem of population aging is becoming increasingly prominent in the world,
+            and the physical and mental health problems of the elderly are easy to be ignored. 
+            In order to popularize the knowledge of elderly cognitive health status and cognitive test,
+            our lab held a cognitive health popularization activity with the theme of 
+            "Pay attention to cognitive health, protect the dignity of life" in the Macao 
+            Artificial Intelligence Education Promotion Association, so that elderly people 
+            can better understand and understand some cognitive problems that we may face with
+            the growth of age. To a certain extent, it can improve the elderly's attention to
+            their own cognitive health. <br>
+            In this activity, we combined with an experimental study conducted by our research 
+            group at the present stage to investigate the neural mechanisms and influencing factors
+            of cognitive and language function in the elderly, introduced cognitive state detection
+            methods such as magnetic resonance and cognitive testing, and tried to explore effective
+            means to delay cognitive aging from the perspective of language learning and language training.<br>
+            The activity was successfully held and achieved good results and feedback.
+
     
