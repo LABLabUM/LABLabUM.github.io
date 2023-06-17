@@ -9,13 +9,14 @@ email: haoyunzhang@um.edu.mo
 place: Room 1004d, N21, University of Macau
 phone: (853) 8822-9212
 social:
-    twitter: https://twitter.com/
-    linkedin: https://www.linkedin.com/
-    google-scholar: https://scholar.google.fr/
-    github: https://github.com/
+    twitter:
+    linkedin:
+    google-scholar: [https://scholar.google.fr/](https://scholar.google.com/citations?user=YPvskac9NgEC&hl=en)
+    github:
     website:
-    orcid: https://orcid.org/
-    research-gate: https://www.researchgate.net/
+    orcid:
+    research-gate:
+    scopus: [https://www.scopus.com/](https://www.scopus.com/authid/detail.uri?authorId=56581445700)
 education:
 - <b>Ph.D.</b>, Psychology & Language Science Dual Title, Specialization in Cognitive and Affective Neuroscience, The Pennsylvania State University, USA
 
