@@ -9,7 +9,7 @@ permalink: /
 
 ### About the Lab
 
-Welcome to visit The Language, Aging, and Bilingualism Lab (<font color=##66B3FF>LAB Lab</font>)! 
+Welcome to visit The Language, Aging, and Bilingualism Lab (<font color="##66B3FF">LAB Lab</font>)! 
 
 Broadly, our research focuses on age-related differences in cognition and the brain, and how the experience of using multiple languages would modulate these age differences. We use behavioral methods as well as different neuroimaging techniques including functional Magnetic Resonance Imaging (fMRI), Electroencephalogram (EEG), and others. The figure below helps demonstrate the research topics in our lab.
 
