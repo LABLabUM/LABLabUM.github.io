@@ -4,7 +4,7 @@ layout: default
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/css/bootstrap.min.css">
 <script src="{{ site.url }}{{ site.baseurl }}/lib/jquery/jquery-1.11.0.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/js/bootstrap.min.js"></script>
-<div style="max-width:80%;margin-left:10%;">
+<div id="homeid" class="col-sm-8 ml-0 nopadding-left">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
 		<!-- 轮播（Carousel）指标 -->
 		<ol class="carousel-indicators car">
@@ -30,4 +30,8 @@ layout: default
 	</div>
 	<img class="img-fluid" src="{{ site.baseurl }}/images/home/{{page.image}}"
 	      style="width: 90%;">
+</div>
+<div id="newsid" class="col-sm-4 nopadding-right" >
+		<img class="img-fluid" src="{{ site.baseurl }}/images/logo/lab-logo.png"
+	      >
 </div>
