@@ -11,12 +11,12 @@ phone: (853) 8822-9212
 social:
     twitter:
     linkedin:
-    google-scholar: [https://scholar.google.fr/](https://scholar.google.com/citations?user=YPvskac9NgEC&hl=en)
+    google-scholar: https://scholar.google.com/citations?user=YPvskac9NgEC&hl=en
     github:
     website:
     orcid:
     research-gate:
-    scopus: [https://www.scopus.com/](https://www.scopus.com/authid/detail.uri?authorId=56581445700)
+    scopus: https://www.scopus.com/authid/detail.uri?authorId=56581445700
 education:
 - <b>Ph.D.</b>, Psychology & Language Science Dual Title, Specialization in Cognitive and Affective Neuroscience, The Pennsylvania State University, USA
 
