@@ -1,6 +1,6 @@
 ---
 layout: member
-category: staff
+category: Principle Investigator
 title: Haoyun Zhang
 image: haoyun-zhang.png
 role: Principal Investigator
