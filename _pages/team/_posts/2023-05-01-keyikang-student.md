@@ -1,6 +1,6 @@
 ---
 layout: member
-category: student
+category: phd student
 title: Keyi KANG
 image: keyi-kang.jpg
 role: PhD Student
