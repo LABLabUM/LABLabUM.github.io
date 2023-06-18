@@ -125,11 +125,11 @@ layout: default
     {% endif %}
     
     <!-- grant -->
-    {% if page.grant %}
+    {% if page.research_support %}
         <div class="row">
             <h3>Current Research Support</h3>
             <ul class="list-unstyled">
-                {% for grant in page.grant %}
+                {% for grant in page.research_support %}
                     <li>{{grant}}</li>
                     <br>
                 {% endfor %}
