@@ -73,6 +73,19 @@ layout: default
         </ul>
     </div>
 
+    <!-- introduction -->
+    {% if page.introduction %}
+        <div class="row">
+            <h3>Introduction</h3>
+            <ul class="list-unstyled">
+                {% for introductions in page.introduction %}
+                    <li>{{introductions}}</li>
+                    <br>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+    
     <!-- Education -->
     {% if page.education %}
         <div class="row">
@@ -118,19 +131,6 @@ layout: default
             <ul class="list-unstyled">
                 {% for interests in page.research_interests %}
                     <li>{{interests}}</li>
-                    <br>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endif %}
-
-    <!-- introduction -->
-    {% if page.introduction %}
-        <div class="row">
-            <h3>Introduction</h3>
-            <ul class="list-unstyled">
-                {% for introductions in page.introduction %}
-                    <li>{{introductions}}</li>
                     <br>
                 {% endfor %}
             </ul>
