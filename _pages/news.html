@@ -14,8 +14,8 @@ permalink: /news.html
     {% for article in site.data.news %}
         <li class="media">
             <div class="media-body">
-            <h4 class="mt-0 mb-1">{{ article.title }}</h4>
-            <p><small>{{ article.date }}</small></p>  
+            <h3 class="mt-0 mb-1">{{ article.title }}</h3>
+            <p><medium>{{ article.date }}</medium></p>  
                
             <div style="max-width:70%;margin-left:15%;">
                 {% if article.images %} 
@@ -50,8 +50,7 @@ permalink: /news.html
                     </div>
                 </div>
                 {% endif %}
-            </div> 
-           
+            </div style="font-size:20px;"> 
             {{ article.content }}
             </div>
         </li>
