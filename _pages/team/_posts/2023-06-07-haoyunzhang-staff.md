@@ -45,13 +45,13 @@ research_interests:
 
 grant:
 - The Science and Technology Development Fund, Macao S.A.R (FDCT)    2023-2026
-“Exploring cognitive assessment platform and cognitive training protocols for Macau older adults”    Role, Principle Investigator
+  “Exploring cognitive assessment platform and cognitive training protocols for Macau older adults”    Role: Principle Investigator
 - National Natural Science Foundation of China (NSFC)	 2023-2025
-"The effects of cognitive control on aging of language output function and its neural mechanisms: a multilevel, multi-approach, multi-population study"   Role, Principle Investigator
+  "The effects of cognitive control on aging of language output function and its neural mechanisms: a multilevel, multi-approach, multi-population study"   Role: Principle Investigator
 - Multi-Year Research Grant, University of Macau (MYRG)	   2023-2024
-“Effects of cognitive control on age-related differences in language production”   Role, Principle Investigator
+  “Effects of cognitive control on age-related differences in language production”   Role: Principle Investigator
 - Startup Research Grant, University of Macau (SRG) 	2022-2025
-“The neural bases of lifelong bilingualism effects on age-related differences in language production and executive functions”    Role: Principle Investigator
+  “The neural bases of lifelong bilingualism effects on age-related differences in language production and executive functions”    Role: Principle Investigator
 
 course:
 - Brain Simulation and Neuroimaging Techniques (University of Macau, 2022-present)
