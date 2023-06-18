@@ -9,8 +9,8 @@ permalink: /for-participants-eng/
 </div>
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
-		<li><a href="{{ site.url }}{{ site.baseurl }}/for-participants-eng">English</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/for-participants-chi">中文</a></li>
+		<li style="font-size:20px;"><a href="{{ site.url }}{{ site.baseurl }}/for-participants-eng">English</a></li>
+		<li style="font-size:20px;"><a href="{{ site.url }}{{ site.baseurl }}/for-participants-chi">中文</a></li>
 	  </ul>
 </div>
 
@@ -19,12 +19,40 @@ permalink: /for-participants-eng/
 <ul class="list-unstyled">
     {% for article in site.data.for-participants-eng %}
         <li class="media">
-            <div class="media-body">
-            <h4 class="mt-0 mb-1"><b>{{ article.title }}</b></h4>
-            {{ article.content }}
-            </div>
-        </li>
+		<div class="media-body">
+			<h4 class="mt-0 mb-1"><b>{{ article.title }}</b></h4>
+			<p style="font-size:20px;">{{ article.content }}</p>
+		</div>
+	</li>
     {% endfor %}
+</ul>
+
+<br>
+<h1>Location</h1>
+
+<ul class="list-unstyled">
+	<li class="media">
+		<div class="media-body">
+			<h3 class="mt-0 mb-1"><b>Address</b></h3>
+			<p style="font-size:20px;">Our lab is located in G002, N21 Research Building, University of Macau. If you are coming by bus, you can take buses 71, 72, 73 and get off at UM/University Hall. The N21 building is right across the street</p>
+		</div>
+	</li>
+	<li class="media">
+		<div class="media-body">
+			<h3 class="mt-0 mb-1"><b>Transportation</b></h3>
+			<p style="font-size:24px;">(1) Public Transportation by Bus</p>
+			<p style="font-size:20px;">- Bus route - 71 (Amara - UM)</p>
+			<p style="font-size:20px;">- Bus route - 72 (Taipa - UM)</p>
+			<p style="font-size:20px;">- Bus route - 73 (Areia Preta Zone - UM)</p>
+                        <p style="font-size:20px;">Take a bus to N6 Administration Building and walk to N21 Building</p>
+			<p style="font-size:24px;">(2) Taxi or self-driving</p>
+		</div>
+	</li>
+	<li class="media">
+		<div class="media-body">
+			<img src="{{ site.url }}{{ site.baseurl }}/images/for_participant/map.jpg" style="width:100%;">
+		</div>
+	</li>
 </ul>
 <br>
 <br>
