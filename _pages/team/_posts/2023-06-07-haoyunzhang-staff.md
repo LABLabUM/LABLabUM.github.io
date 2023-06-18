@@ -41,7 +41,7 @@ grant:
 - <b>National Encouragement Scholarship for Outstanding College Students</b>, for excellent academic performance (i.e., top 1%), awarded by the Ministry of Education of China, 2007; 2008. ($1640)
 
 research_support:
-- The Science and Technology Development Fund, Macao S.A.R(FDCT)2023-2026 <br>Exploring cognitive assessment platform and cognitive training protocols for Macau older adultsRole: Principle Investigator
+- The Science and Technology Development Fund, Macao S.A.R(FDCT)    2023-2026 <br>"Exploring cognitive assessment platform and cognitive training protocols for Macau older adults"    Role: Principle Investigator
 
 
 research_interests:
