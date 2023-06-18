@@ -40,9 +40,10 @@ grant:
 - <b>Excellent Student Award</b>, for outstanding academic achievement and professional development, awarded by Shaanxi Normal University, China. 2007; 2008.
 - <b>National Encouragement Scholarship for Outstanding College Students</b>, for excellent academic performance (i.e., top 1%), awarded by the Ministry of Education of China, 2007; 2008. ($1640)
 
+
 research_support:
-- The Science and Technology Development Fund, Macao S.A.R(FDCT)    2023-2026    "Exploring cognitive assessment platform and cognitive training protocols for Macau older adults"    Role: Principle Investigator
-- National Natural Science Foundation of China(NSFC)    2023-2025    "The effects of cognitive control on aging of language output function and its neural mechanisms: a multilevel, multi-approach, multi-population study"    Role: Principle Investigator
+  - The Science and Technology Development Fund, Macao S.A.R(FDCT)    2023-2026    "Exploring cognitive assessment platform and cognitive training protocols for Macau older adults"    Role: Principle Investigator
+  - National Natural Science Foundation of China(NSFC)    2023-2025    "The effects of cognitive control on aging of language output function and its neural mechanisms: a multilevel, multi-approach, multi-population study"    Role: Principle Investigator
 
 
 
