@@ -41,8 +41,8 @@ grant:
 - <b>National Encouragement Scholarship for Outstanding College Students</b>, for excellent academic performance (i.e., top 1%), awarded by the Ministry of Education of China, 2007; 2008. ($1640)
 
 research_support:
-- The Science and Technology Development Fund, Macao S.A.R(FDCT)    2023-2026 <br>"Exploring cognitive assessment platform and cognitive training protocols for Macau older adults"    <br>Role: Principle Investigator.
-- National Natural Science Foundation of China (NSFC)    2023-2025  <br>"The effects of cognitive control on aging of language output function and its neural mechanisms: a multilevel, multi-approach, multi-population study"    <br>Role: Principle Investigator.  
+- The Science and Technology Development Fund, Macao S.A.R(FDCT)    2023-2026 <br>"Exploring cognitive assessment platform and cognitive training protocols for Macau older adults"    <br>Role: Principle Investigator
+- National Natural Science Foundation of China (NSFC)    2023-2025  <br>"The effects of cognitive control on aging of language output function and its neural mechanisms: a multilevel, multi-approach, multi-population study"    <br>Role: Principle Investigator  
 
 research_interests:
 - Cognitive abilities, such as executive function and language production, decline with age. Older adults typically struggle to memorize items, inhibit irrelevant information, and/or produce fluent speech. These age-associated declines interfere with older adults’ successful communication and social interactions. To help alleviate these problems, my research investigates factors that contribute to age-related declines in language production, and their neural bases, mainly from four perspectives, 1) Phonological characteristics, 2) Cognitive control demands, 3) Functional connectivity, and 4) Bilingualism. I use various behavioral and neuroscience methods to investigate my research questions, including Electroencephalography (EEG), and Functional Magnetic Resonance Imaging (fMRI).
