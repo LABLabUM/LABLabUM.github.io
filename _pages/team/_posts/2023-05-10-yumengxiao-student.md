@@ -1,6 +1,6 @@
 ---
 layout: member
-category: student
+category: master student
 title: Yumeng XIAO
 image: yumeng-xiao.jpeg
 role: Master Student
