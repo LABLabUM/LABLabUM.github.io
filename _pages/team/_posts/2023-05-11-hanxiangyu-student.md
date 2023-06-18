@@ -7,11 +7,11 @@ role: Master Student
 email: mc25812@connect.um.edu.mo
 permalink: 'team/hanqiang-yu'
 social:
-    twitter: 
+    twitter:  
     linkedin: 
     google-scholar: 
     github: 
-    website:
+    website: 
     orcid: 
     research-gate: 
 research_interests:
