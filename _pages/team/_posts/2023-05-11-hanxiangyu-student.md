@@ -1,6 +1,6 @@
 ---
 layout: member
-category: student
+category: master student
 title: Hanqiang Yu
 image: hanqiang-yu.jpeg
 role: Master Student
