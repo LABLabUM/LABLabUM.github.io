@@ -44,8 +44,10 @@ grant:
 research_support:
 - The Science and Technology Development Fund, Macao S.A.R(FDCT)    2023-2026    "Exploring cognitive assessment platform and cognitive training protocols for Macau older adults."    Role:Principle Investigator.
 
-- National Natural Science Foundation of China(NSFC)    2023-2025    "The effects of cognitive control on aging of language output function and its neural mechanisms: a multilevel, multi-approach, multi-population study."    Role:Principle Investigator
-- 
+- National Natural Science Foundation of China(NSFC)    2023-2025    "The effects of cognitive control on aging of language output function and its neural mechanisms: a multilevel, multi-approach, multi-population study."    Role:Principle Investigator.
+- Multi-Year Research Grant, University of Macau (MYRG)    2023-2024 <br>"Effects of cognitive control on age-related differences in language production"    Role:Principle Investigator.
+- Startup Research Grant, University of Macau (SRG)    2022-2025 <br>"The neural bases of lifelong bilingualism effects on age-related differences in language production and executive functions"    Role:Principle Investigator.
+
 
 
 
