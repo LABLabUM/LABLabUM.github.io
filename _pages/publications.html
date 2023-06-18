@@ -6,16 +6,16 @@ sitemap: false
 permalink: /publications/
 ---
 
-<h1>Selected {{page.title}}</h1>
+<h1>Selected Publications</h1>
 
 <div class="panel-group" id="accordion">
-    <div class="panel panel-default" style="font-size:20px;">
+    <div class="panel panel-default">
 
     {% for publi in site.data.publications %}
         <div class="panel-heading">
             <a data-toggle="collapse" data-parent="#accordion"
                href="#collapse{{forloop.index}}"
-               style="color: inherit;">
+               style="color: inherit;font-size:20px;">
             <!-- authors -->
             {% assign authors = "" | split:"/" %}
             {% for author in publi.author %}
