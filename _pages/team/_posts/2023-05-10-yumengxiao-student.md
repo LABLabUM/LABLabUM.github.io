@@ -4,6 +4,7 @@ category: student
 title: Yumeng XIAO
 image: yumeng-xiao.jpeg
 role: Master Student
+email: mc25809@connect.um.edu.mo
 permalink: 'team/yumeng-xiao'
 social:
     twitter: https://twitter.com/
