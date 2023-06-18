@@ -124,13 +124,13 @@ layout: default
         </div>
     {% endif %}
     
-    <!-- awards -->
-    {% if page.awards %}
+    <!-- grant -->
+    {% if page.grant %}
         <div class="row">
-            <h3>Awards and Honors</h3>
+            <h3>Current Research Support</h3>
             <ul class="list-unstyled">
-                {% for awards in page.awards %}
-                    <li>{{awards}}</li>
+                {% for grant in page.grant %}
+                    <li>{{grant}}</li>
                     <br>
                 {% endfor %}
             </ul>
