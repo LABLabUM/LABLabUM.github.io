@@ -42,11 +42,11 @@ grant:
 
 
 research_support:
-- The Science and Technology Development Fund, Macao S.A.R(FDCT)&nbsp&nbsp&nbsp&nbsp 2023-2026    <br>"Exploring cognitive assessment platform and cognitive training protocols for Macau older adults."&nbsp&nbsp&nbsp&nbsp    Role:&nbsp Principle Investigator.
+- The Science and Technology Development Fund, Macao S.A.R(FDCT) &nbsp &nbsp &nbsp &nbsp 2023-2026    <br>"Exploring cognitive assessment platform and cognitive training protocols for Macau older adults."&nbsp &nbsp &nbsp &nbsp    Role: &nbsp Principle Investigator.
 
-- National Natural Science Foundation of China(NSFC)&nbsp&nbsp&nbsp&nbsp    2023-2025    <br>"The effects of cognitive control on aging of language output function and its neural mechanisms:a multilevel, multi-approach, multi-population study."&nbsp&nbsp&nbsp&nbsp Role:&nbsp Principle Investigator.
-- Multi-Year Research Grant, University of Macau (MYRG)&nbsp&nbsp&nbsp&nbsp    2023-2024 <br>"Effects of cognitive control on age-related differences in language production"&nbsp&nbsp&nbsp&nbspRole:&nbsp Principle Investigator.
-- Startup Research Grant, University of Macau (SRG)&nbsp&nbsp&nbsp&nbsp2022-2025 <br>"The neural bases of lifelong bilingualism effects on age-related differences in language production and executive functions"&nbsp&nbsp&nbsp&nbsp Role:&nbsp Principle Investigator.
+- National Natural Science Foundation of China(NSFC)&nbsp &nbsp &nbsp &nbsp    2023-2025    <br>"The effects of cognitive control on aging of language output function and its neural mechanisms:a multilevel, multi-approach, multi-population study."&nbsp &nbsp &nbsp &nbsp Role:&nbsp Principle Investigator.
+- Multi-Year Research Grant, University of Macau (MYRG)&nbsp &nbsp &nbs p&nbsp    2023-2024 <br>"Effects of cognitive control on age-related differences in language production"&nbsp &nbsp &nbsp &nbsp Role:&nbsp Principle Investigator.
+- Startup Research Grant, University of Macau (SRG)&nbsp &nbsp &nbsp &nbsp 2022-2025 <br>"The neural bases of lifelong bilingualism effects on age-related differences in language production and executive functions"&nbsp &nbsp &nbsp &nbsp Role:&nbsp Principle Investigator.
 
 
 
