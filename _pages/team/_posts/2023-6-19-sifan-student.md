@@ -19,6 +19,6 @@ research_interests:
 - Word-emotion-related cognitive function
 
 introduction:
--I am a PhD student in Neuroscience at University of Macau. I currently am interested in exploring language cognition and how to prevent cognitive decline in the elderly through language training. In addition,i will also devote myself to exploring the influence of word emotion on cognitive function.
+- I am a PhD student in Neuroscience at University of Macau. I currently am interested in exploring language cognition and how to prevent cognitive decline in the elderly through language training. In addition,i will also devote myself to exploring the influence of word emotion on cognitive function.
 
 ---
