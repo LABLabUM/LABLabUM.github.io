@@ -1,10 +1,10 @@
 ---
 layout: member
 category: phd student
-title: Sifan
+title: Sifan Zhang
 image: sifan.jpeg
 role: PhD Student
-permalink: 'team/Sifan'
+permalink: 'team/sifan-zhang'
 social:
     twitter: 
     linkedin: 
