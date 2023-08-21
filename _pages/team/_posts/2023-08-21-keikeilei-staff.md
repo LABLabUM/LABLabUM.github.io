@@ -1,6 +1,6 @@
 ---
 layout: member
-category: Research Staff
+category: Research staff
 title: Keikei Lei
 image: keikei.jpeg
 role: Research Staff
