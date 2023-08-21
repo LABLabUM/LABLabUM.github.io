@@ -19,4 +19,5 @@ research_interests:
 - One of my proudest accomplishments is bringing people together. I arrange meetings that connect researchers, clinicians, and various associations. It's all about finding common ground and working together to achieve a common goal.
 - What motivates me even more is connecting different generations.
 - It's not just about research; it's about building a community.
+- 
 ---
