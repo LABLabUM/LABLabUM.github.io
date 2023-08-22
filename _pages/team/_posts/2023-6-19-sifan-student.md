@@ -1,7 +1,7 @@
 ---
 layout: member
 category: phd student
-title: Sifan Zhang
+title: Sifan ZHANG
 image: sifan.jpeg
 role: PhD Student
 permalink: 'team/sifan-zhang'
