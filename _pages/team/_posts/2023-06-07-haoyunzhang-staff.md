@@ -1,7 +1,7 @@
 ---
 layout: member
 category: Principle Investigator
-title: Haoyun Zhang
+title: Haoyun ZHANG
 image: haoyun-zhang.png
 role: Principal Investigator
 permalink: 'team/prof-haoyun-zhang'
