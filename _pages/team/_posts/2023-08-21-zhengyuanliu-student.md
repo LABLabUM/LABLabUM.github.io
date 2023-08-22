@@ -1,7 +1,7 @@
 ---
 layout: member
 category: master student
-title: Zhengyuan Liu
+title: Zhengyuan LIU
 image: zhengyuan.jpg
 role: Master Student
 email: mc36422@um.edu.mo
