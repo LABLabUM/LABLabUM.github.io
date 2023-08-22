@@ -1,7 +1,7 @@
 ---
 layout: member
 category: Research staff
-title: Keikei Lei
+title: Keikei LEI
 image: keikei.jpeg
 role: Research Staff
 email: keikeilei@um.edu.mo
