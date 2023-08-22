@@ -1,7 +1,7 @@
 ---
 layout: member
 category: master student
-title: Jiaze Li
+title: Jiaze LI
 image: jiaze.jpg
 role: Master Student
 email: mc36439@um.edu.mo
