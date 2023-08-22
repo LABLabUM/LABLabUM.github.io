@@ -1,7 +1,7 @@
 ---
 layout: member
 category: master student
-title: Jielu Chen
+title: Jielu CHEN
 image: jielu.jpg
 role: Master Student
 email: mc36435@@um.edu.mo
