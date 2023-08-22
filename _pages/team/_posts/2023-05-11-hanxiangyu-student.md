@@ -1,7 +1,7 @@
 ---
 layout: member
 category: master student
-title: Hanxiang Yu
+title: Hanxiang YU
 image: hanqiang-yu.jpeg
 role: Master Student
 email: mc25812@connect.um.edu.mo
