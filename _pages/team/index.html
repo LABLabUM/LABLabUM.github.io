@@ -27,29 +27,6 @@ permalink: /team/
      </div>
 </div>
 
-<!-- Research staff -->
-
-<h2 style="color:#66B3FF;"><a id="staff"></a>Research staff</h2>
-<div class="card team-member-card">
-    <div class="row mt-3">
-    {% assign members = site.posts | where: 'category', 'Research staff' | sort: 'date' %}
-    {% for member in members %}
-        <div class="team_graph">
-            <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                    class="card-img img-responsive img-thumbnail"
-                    style="width:85%;height:85%"/>
-            </a>
-            <span style='width:100%;'>
-            <center><font style="font-size:20px;">{{ member.title }}</font></center>
-            <center><font style="font-size:20px;">{{ member.role }}</font></center>
-            </span>
-        </div>
-     {% endfor %}
-     </div>
-</div>
-
-
 
 <!-- Ph.D. students -->
 
