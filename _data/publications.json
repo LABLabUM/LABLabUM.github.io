@@ -1,4 +1,50 @@
 [
+	
+	{
+		"id": ,
+		"type": "article-journal",
+		"title": "Multilingual Language Diversity Protects Native Language Production under Different Control Demands",
+		"container-title": "Brain Sciences",
+		"page": ,
+		"volume": "13",
+		"issue": "11",
+		"source": ,
+		"abstract": ,
+		"DOI": "https://doi.org/10.3390/brainsci13111587",
+		"author": [
+			{
+				"family": "Kang" ,
+				"given": "K"
+			},
+			{
+				"family": "Xiao" ,
+				"given": "Y"
+			}
+			{
+				"family": "Yu" ,
+				"given": "H"
+			}
+			{
+				"family": "Diaz" ,
+				"given": "MT"
+			}
+			{
+				"family": "Zhang" ,
+				"given": "H"
+			}
+
+
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2023"
+				]
+			]
+		}
+	},
+
+	
 	{
 		"id": ,
 		"type": "article-journal",
