@@ -1,9 +1,9 @@
 ---
 layout: member
-category: Research staff
+category: phd student
 title: Keikei LEI
 image: keikei.jpeg
-role: Research Staff
+role: PhD Student
 email: keikeilei@um.edu.mo
 permalink: 'team/keikei-lei'
 social:
