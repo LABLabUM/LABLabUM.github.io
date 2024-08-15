@@ -1,9 +1,9 @@
 ---
 layout: member
-category: master student
+category: Lab Alumni
 title: Yumeng XIAO
 image: yumeng-xiao.jpeg
-role: Master Student
+role: Lab Alum
 email: mc25809@connect.um.edu.mo
 permalink: 'team/yumeng-xiao'
 social:
