@@ -38,7 +38,7 @@ permalink: /team/
             <a href={{member.url}}>
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
                     class="card-img img-responsive img-thumbnail"
-                    style="width:100%;height:85%"/>
+                    style="width:100%;height:100%"/>
             </a>
             <span style='width:100%;'>
             <center><font style="font-size:20px;">{{ member.title }}</font></center>
@@ -100,7 +100,7 @@ permalink: /team/
 <h2 style="color:#66B3FF;"><a id="student"></a>Lab Alumni</h2>
 <div class="card team-member-card">
     <div class="row mt-3">
-        {% assign members = site.posts | where: 'category', 'master student' | sort: 'date' %}
+        {% assign members = site.posts | where: 'category', 'Lab Alumni' | sort: 'date' %}
         {% for member in members %}
             <div class="team_graph">
                 <a href={{member.url}}>
