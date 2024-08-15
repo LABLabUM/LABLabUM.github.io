@@ -1,4 +1,42 @@
 [
+
+
+	{
+		"id": ,
+		"type": "article-journal",
+		"title": "Standardizing norms for 1286 colored pictures in Cantonese",
+		"container-title": "Behavior Research Methods",
+		"page": ,
+		"volume": ,
+		"issue":,
+		"source": ,
+		"abstract": ,
+		"DOI": "https://doi.org/10.3758/s13428-024-02362-y",
+		"author": [
+			{
+				"family": "Zhong J." ,
+				"given": "J."
+			},
+			{
+				"family": "Huang W." ,
+				"given": "W."
+			},
+			{
+				"family": "Kang K." ,
+				"given": "K."
+			}
+
+
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+
 	
 	{
 		"id": ,
@@ -29,7 +67,7 @@
 				"given": "MT"
 			},
 			{
-				"family": "Zhang H" ,
+				"family": "Zhang H<sup>*</sup>" ,
 				"given": "H"
 			}
 
