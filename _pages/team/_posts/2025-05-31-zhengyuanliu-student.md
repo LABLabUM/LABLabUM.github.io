@@ -1,16 +1,16 @@
 ---
 layout: member
-category: master student
+category: phd student
 title: Zhengyuan LIU
 image: zhengyuan.jpg
-role: Master Student
-email: mc36422@um.edu.mo
+role: PhD Student
+email: yc573372@um.edu.mo | paradeluxe3726@gmail.com
 permalink: 'team/zhengyuan-liu'
 social:
     twitter:  
     linkedin: 
     google-scholar: 
-    github: 
+    # github: https://github.com/Paradeluxe
     website: 
     orcid: 
     research-gate: 
