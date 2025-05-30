@@ -1,9 +1,9 @@
 ---
 layout: member
-category: master student
+category: Lab Alumni
 title: Jielu CHEN
 image: jielu.jpg
-role: Master Student
+role: Lab Alum
 email: mc36435@@um.edu.mo
 permalink: 'team/jielu-chen'
 social:

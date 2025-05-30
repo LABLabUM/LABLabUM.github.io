@@ -4,6 +4,20 @@ $bootstrap-sass-asset-helper: false !default;
 // --------------------------------------------------
 
 
+// 引入本地思源宋体港版字体
+@font-face {
+  font-family: 'Source Han Serif HK';
+  src: url('../../fonts/SourceHanSerifHK-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Han Serif HK';
+  src: url('../../fonts/SourceHanSerifHK-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
@@ -44,10 +58,10 @@ $link-hover-decoration: underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:       'Source Han Serif HK', '思源宋体', serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
+$font-family-base:        $font-family-serif !default;
 
 $font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
@@ -66,7 +80,7 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
+$headings-font-family:    'Source Han Serif HK', '思源宋体', serif !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          $gray-dark !default;

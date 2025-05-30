@@ -47,7 +47,7 @@
 
 // Optional footer (stays gray in every modifier class)
 .panel-footer {
-  padding: $panel-footer-padding;
+  padding: 20px 15px 10px 15px !important; // 强制增加顶部内边距
   background-color: $panel-footer-bg;
   border-top: 1px solid $panel-inner-border;
   @include border-bottom-radius(($panel-border-radius - 1));

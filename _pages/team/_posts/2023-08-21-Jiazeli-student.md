@@ -1,9 +1,9 @@
 ---
 layout: member
-category: master student
+category: Lab Alumni
 title: Jiaze LI
 image: jiaze.jpg
-role: Master Student
+role: Lab Alum
 email: mc36439@um.edu.mo
 permalink: 'team/jiaze-li'
 social:

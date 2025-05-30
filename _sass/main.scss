@@ -1,0 +1,30 @@
+// ...existing code...
+
+body {
+    margin: 0; // 重置body默认外边距，避免影响布局
+}
+
+header {
+  background-image: url('/images/home/header-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.team_container {
+    width: 100%; // 恢复为100%，避免vw导致溢出
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px 1.33%;
+}
+
+.about-lab-narrow-margin {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
