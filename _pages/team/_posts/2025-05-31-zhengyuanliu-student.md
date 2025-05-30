@@ -10,7 +10,7 @@ social:
     twitter:  
     linkedin: 
     google-scholar: 
-    # github: https://github.com/Paradeluxe
+    github: https://github.com/Paradeluxe
     website: 
     orcid: 
     research-gate: 
