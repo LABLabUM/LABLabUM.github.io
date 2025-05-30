@@ -2,7 +2,7 @@
 layout: member
 category: phd student
 title: Jing ZHONG
-image: Jing ZHONG.jpg
+image: jing-zhong.jpg
 role: PhD Student
 email: mc46412@um.edu.mo
 permalink: 'team/jing-zhong'
@@ -10,7 +10,7 @@ social:
     twitter:  
     linkedin: 
     google-scholar: 
-    github: https://github.com/Paradeluxe
+    github: 
     website: 
     orcid: 
     research-gate: 

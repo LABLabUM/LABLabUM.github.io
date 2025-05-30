@@ -2,7 +2,7 @@
 layout: member
 category: master student
 title: Yimin CAI
-image: Yimin CAI.jpg
+image: yimincai.jpg
 role: Master Student
 email: mc46413@um.edu.mo
 permalink: 'team/yimin-cai'
