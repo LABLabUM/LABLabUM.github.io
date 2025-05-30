@@ -5,7 +5,7 @@ title: Jing ZHONG
 image: Jing ZHONG.jpg
 role: PhD Student
 email: mc46412@um.edu.mo
-permalink: 'team/zhengyuan-liu'
+permalink: 'team/jing-zhong'
 social:
     twitter:  
     linkedin: 
