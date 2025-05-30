@@ -4,7 +4,7 @@ category: phd student
 title: Zhengyuan LIU
 image: zhengyuan.jpg
 role: PhD Student
-email: yc573372@um.edu.mo | paradeluxe3726@gmail.com
+email: yc573372@um.edu.mo
 permalink: 'team/zhengyuan-liu'
 social:
     twitter:  
