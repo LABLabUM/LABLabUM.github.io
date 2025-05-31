@@ -210,6 +210,34 @@ header {
   box-sizing: border-box;
 }
 
+// 轮播 caption 淡入淡出动画
+.anim-fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.anim-fade-in.fast {
+  animation-duration: 0.3s;
+}
+.anim-fade-out {
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+.anim-fade-out.fast {
+  animation-duration: 0.3s;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 
 
 

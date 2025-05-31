@@ -78,9 +78,10 @@ body{
   transition: opacity 0.6s;
   z-index: 2;
   pointer-events: auto;
-  font-size: 30px; /* 修改字号为32px，可根据需要调整 */
-  /* 移除position: relative; 保证flex生效 */
-  /* 移除height，交由父容器控制 */
+  font-size: 30px;
+}
+.carousel-caption-text.show {
+  opacity: 1;
 }
 .carousel-inner .item.active .carousel-caption-text {
   opacity: 1;
@@ -205,13 +206,64 @@ body{
 
 <script>
 $(function(){
-  // 初始显示第一个caption文字
-  $('.carousel-inner .item.active .carousel-caption-text').css('opacity', 1);
-  $('#myCarousel').on('slide.bs.carousel', function (e) {
-  $(this).find('.item.active .carousel-caption-text').css('opacity', 0);
+  var isSliding = false;
+  var pendingDirection = null;
+  var $carousel = $('#myCarousel');
+  var $items = $carousel.find('.item');
+  var captionFadeDuration = 600; // 与CSS一致
+
+  function getActiveIndex() {
+    return $items.index($carousel.find('.item.active'));
+  }
+
+  // 只用class控制渐变
+  function showCaption(idx) {
+    var $captionText = $items.eq(idx).find('.carousel-caption-text');
+    $captionText.addClass('show');
+  }
+  function hideCurrentCaption(callback) {
+    var idx = getActiveIndex();
+    var $captionText = $items.eq(idx).find('.carousel-caption-text');
+    $captionText.removeClass('show');
+    // 等待CSS动画结束再回调
+    setTimeout(callback, captionFadeDuration);
+  }
+
+  // 初始化
+  $items.find('.carousel-caption-text').removeClass('show');
+  showCaption(0);
+
+  $('.left.carousel-control, .right.carousel-control').off('click').on('click', function(e){
+    e.preventDefault();
+    if(isSliding) return;
+    isSliding = true;
+    var dir = $(this).hasClass('left') ? 'prev' : 'next';
+    pendingDirection = dir;
+    hideCurrentCaption(function(){
+      $carousel.carousel(dir);
+      // 刷新自动播放计时器
+      $carousel.carousel('pause');
+      $carousel.carousel('cycle');
+    });
   });
-  $('#myCarousel').on('slid.bs.carousel', function (e) {
-  $(this).find('.item.active .carousel-caption-text').css('opacity', 1);
+
+  $('.carousel-indicators li').off('click').on('click', function(e){
+    e.preventDefault();
+    if(isSliding) return;
+    var idx = $(this).data('slide-to');
+    if(idx === getActiveIndex()) return;
+    isSliding = true;
+    pendingDirection = idx;
+    hideCurrentCaption(function(){
+      $carousel.carousel(idx);
+    });
+  });
+
+  $carousel.on('slid.bs.carousel', function(){
+    var idx = getActiveIndex();
+    showCaption(idx);
+    isSliding = false;
+    pendingDirection = null;
   });
 });
 </script>
