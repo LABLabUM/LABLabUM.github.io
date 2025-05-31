@@ -168,8 +168,13 @@ body{
     <span class="carousel-caption-text"></span>
   </span>
 </div>
-<div style="font-size:20px;max-width:1200px;margin:40px auto 0 auto;">
-  {{ content }}
+<!-- <div style="font-size:20px;max-width:1200px;margin:40px auto 0 auto;padding-left:200px;padding-right:200px;"> -->
+<!-- 文字区域 about the lab -->
+<div style="font-size:24px; display: flex;">
+  <div style="width: 50%; text-align: left; padding-left: 5vw; box-sizing: border-box;">
+    {{ content }}
+  </div>
+  <div style="width: 50%;"></div>
 </div>
 <img class="img-fluid" src="{{ site.baseurl }}/images/home/{{page.image}}"
     style="width: 90%;display:block;margin:40px auto 0 auto;">
