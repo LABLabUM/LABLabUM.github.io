@@ -6,18 +6,6 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
 
 @font-face {
-  font-family: 'Source Han Serif HK';
-  src: url('../fonts/SourceHanSerifHK-Regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Source Han Serif HK';
-  src: url('../fonts/SourceHanSerifHK-Bold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
   font-family: 'Libre Baskerville';
   src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -40,7 +28,7 @@ body {
   margin: 0 !important;
   padding-top: 120px;
   text-align: justify;
-  font-family: 'Source Han Serif HK', '思源宋体', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 figcaption {
@@ -133,7 +121,7 @@ figcaption {
   display: block;
 }
 body, html, * {
-  font-family: 'Libre Baskerville', 'Source Han Serif HK', '思源宋体', serif !important;
+  font-family: 'Libre Baskerville', serif !important;
 }
 
 // 修复Font Awesome图标显示问题，避免全局font-family影响fa图标
@@ -221,3 +209,7 @@ header {
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
+
