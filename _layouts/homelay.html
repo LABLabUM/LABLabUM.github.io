@@ -8,77 +8,113 @@ body{
 	background-position: 95%  50%;
 	background-size: 40% auto;
 }
+#homeid.home-center {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.carousel-fullwidth-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  background: #fff;
+  /* margin-top: 100px !important; 新增：让轮播区域整体下移100px */
+}
+#myCarousel.carousel {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+}
+.carousel-inner {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+.carousel-inner .item img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
 </style>
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/css/bootstrap.min.css">
 <script src="{{ site.url }}{{ site.baseurl }}/lib/jquery/jquery-1.11.0.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/js/bootstrap.min.js"></script>
-<div id="homeid" class="home-center">
-	<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
-		<!-- 轮播（Carousel）指标 -->
-		<ol class="carousel-indicators car">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
-			<li data-target="#myCarousel" data-slide-to="4"></li>
-			<li data-target="#myCarousel" data-slide-to="5"></li>
-			<li data-target="#myCarousel" data-slide-to="6"></li>
-			<li data-target="#myCarousel" data-slide-to="7"></li>
-			<li data-target="#myCarousel" data-slide-to="8"></li>
-		</ol>
-		<!-- 轮播（Carousel）项目 -->
-		<div class="carousel-inner" style="height:800px;">
-			<div class="item active">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/event13.JPG" alt="20240815-1" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>LAB Lab meeting and birthday celebration</b></span>
-			</div>
-			<div class="item">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/event14.jpg" alt="20240815-2" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>LAB Lab anual lunch gathering</b></span>
-			</div>
-			<div class="item">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/event12.jpg" alt="First slide" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>First LAB Lab meeting on Fall 2023</b></span>
-			</div>
-			<div class="item">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/events3.jpeg" alt="Second slide" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>Cognitive health promotion activities</b></span>
-			</div>
-			<div class="item">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/events2.jpeg" alt="Third slide" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>Cognitive health promotion activities</b></span>
-			</div>
-			<div class="item">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/events9.jpg" alt="Fourth slide" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>Keyi presents her project at a conference</b></span>
-			</div>
-			<div class="item">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/events10.jpg" alt="Fifth slide" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>lab gathering for a hot pot</b></span>
-			</div>
-			<div class="item">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/event11.JPG" alt="Sixth slide" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>lab gathering</b></span>
-			</div>
-			<div class="item">
-				<img src="{{ site.url }}{{ site.baseurl }}/images/slider/events1.jpeg" alt="Seventh slide" style="width:100%;height:100%;object-fit:cover;">
-				<span class="carousel-caption-custom"><b>Cognitive health promotion activities</b></span>
-			</div>
-		</div>
-		<!-- 左右切换按钮 -->
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background:none; left: 10px;">
-			<span style="font-size:36px;line-height:1;">&lt;</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next" style="background:none; right: 10px;">
-			<span style="font-size:36px;line-height:1;">&gt;</span>
-		</a>
-	</div>
-	<div style="font-size:20px;">
-		{{ content }}
-	</div>
-	<img class="img-fluid" src="{{ site.baseurl }}/images/home/{{page.image}}"
-	      style="width: 90%;">
+<div class="carousel-fullwidth-wrapper">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators car">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner" style="height:800px;">
+      <div class="item active">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event13.JPG" alt="20240815-1" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>LAB Lab meeting and birthday celebration</b></span>
+      </div>
+      <div class="item">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event14.jpg" alt="20240815-2" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>LAB Lab anual lunch gathering</b></span>
+      </div>
+      <div class="item">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event12.jpg" alt="First slide" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>First LAB Lab meeting on Fall 2023</b></span>
+      </div>
+      <div class="item">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events3.jpeg" alt="Second slide" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>Cognitive health promotion activities</b></span>
+      </div>
+      <div class="item">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events2.jpeg" alt="Third slide" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>Cognitive health promotion activities</b></span>
+      </div>
+      <div class="item">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events9.jpg" alt="Fourth slide" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>Keyi presents her project at a conference</b></span>
+      </div>
+      <div class="item">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events10.jpg" alt="Fifth slide" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>lab gathering for a hot pot</b></span>
+      </div>
+      <div class="item">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event11.JPG" alt="Sixth slide" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>lab gathering</b></span>
+      </div>
+      <div class="item">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events1.jpeg" alt="Seventh slide" style="width:100%;height:100%;object-fit:cover;">
+        <span class="carousel-caption-custom"><b>Cognitive health promotion activities</b></span>
+      </div>
+    </div>
+    <!-- 左右切换按钮 -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background:none; left: 10px;">
+      <span style="font-size:36px;line-height:1;">&lt;</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="background:none; right: 10px;">
+      <span style="font-size:36px;line-height:1;">&gt;</span>
+    </a>
+  </div>
 </div>
+<div style="font-size:20px;max-width:1200px;margin:40px auto 0 auto;">
+  {{ content }}
+</div>
+<img class="img-fluid" src="{{ site.baseurl }}/images/home/{{page.image}}"
+      style="width: 90%;display:block;margin:40px auto 0 auto;">
 
 <style>
 /* .carousel-inner {

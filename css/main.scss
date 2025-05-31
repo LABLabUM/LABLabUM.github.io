@@ -37,10 +37,10 @@
 }
 
 body {
-  padding-top: 130px;
+  margin: 0 !important;
+  // padding-top: 130px;
   text-align: justify;
   font-family: 'Source Han Serif HK', '思源宋体', serif;
-  margin: 24px;
 }
 
 figcaption {
@@ -90,6 +90,8 @@ figcaption {
   max-width: 1600px; /* 恢复为原900px */
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .team_graph{
@@ -112,21 +114,32 @@ figcaption {
 /* Carousel */
 
 .carousel {
-  
   border-radius: 3px 3px 3px 3px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100%;
 }
-// .carousel-inner {
-//   height: 600px;
-// }
-// .carousel-inner .item img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
+.carousel-inner {
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+.carousel-inner .item img {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
 body, html, * {
   font-family: 'Libre Baskerville', 'Source Han Serif HK', '思源宋体', serif !important;
+}
+
+// 修复Font Awesome图标显示问题，避免全局font-family影响fa图标
+.fab, .fas, .far, .fal, .fa {
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands', 'FontAwesome', Arial, sans-serif !important;
+  font-weight: 900 !important;
 }
 
 .lab-logo {
@@ -141,6 +154,9 @@ body, html, * {
   float: none;
   display: flex;
   align-items: center;
+}
+.navbar-placeholder {
+  height: 0px; /* 与导航栏高度一致 */
 }
 .navbar-collapse {
   flex: 1;
@@ -158,16 +174,23 @@ body, html, * {
 }
 
 .navbar {
-  min-height: 110px;
+  // height: 200px; // 恢复为原始高度
+  // min-height: 110px;
   padding-top: 35px;
   padding-bottom: 35px;
+  margin-bottom: 0 !important; // 去除下边距
 }
 
 header {
-  background-image: url('/images/home/header-bg.png'); // 路径后缀已改为png
+  // background-image: url('/images/home/header-bg.png'); // 路径后缀已改为png
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 0 !important;
+}
+
+#footer, #footer .panel-footer {
+  margin: 0 !important;
 }
 
 #footer, #footer .panel-footer, #footer p, #footer li, #footer a {
@@ -192,10 +215,9 @@ header {
 }
 
 .home-center {
-  max-width: 1500px;
   width: 100%;
-
-  margin: 0 20px;
-  padding: 0 16px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }

@@ -2,13 +2,15 @@
 
 body {
     margin: 0; // 重置body默认外边距，避免影响布局
+    padding: 50px !important;
 }
 
 header {
-  background-image: url('/images/home/header-bg.png');
+  // background-image: url('/images/home/header-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 0 !important;
 }
 
 .team_container {
@@ -25,6 +27,18 @@ header {
 .about-lab-narrow-margin {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.carousel-fullwidth-wrapper {
+  margin-top: 0 !important;
+}
+
+#myCarousel.carousel {
+  margin-top: 0 !important;
+}
+
+.carousel-inner {
+  margin-top: 0 !important;
 }
 
 
