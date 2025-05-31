@@ -79,6 +79,7 @@ body{
   z-index: 2;
   pointer-events: auto;
   font-size: 30px;
+  font-weight: bold;
 }
 .carousel-caption-text.show {
   opacity: 1;
@@ -111,92 +112,61 @@ body{
 <script src="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/js/bootstrap.min.js"></script>
 <div class="carousel-fullwidth-wrapper">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
-  <!-- 轮播（Carousel）指标 -->
-  <ol class="carousel-indicators car">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
-    <li data-target="#myCarousel" data-slide-to="6"></li>
-    <li data-target="#myCarousel" data-slide-to="7"></li>
-    <li data-target="#myCarousel" data-slide-to="8"></li>
-  </ol>
-  <!-- 轮播（Carousel）项目 -->
-  <div class="carousel-inner" style="height:800px;">
-    <div class="item active">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event13.JPG" alt="20240815-1" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>LAB Lab meeting and birthday celebration</b></span>
-    </span>
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators car">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner" style="height:800px;">
+      <div class="item active" data-caption="LAB Lab Meeting and Birthday Celebration">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event13.JPG" alt="20240815-1" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="item" data-caption="LAB Lab Anual Lunch Gathering">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event14.jpg" alt="20240815-2" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="item" data-caption="First LAB Lab Meeting on Fall 2023">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event12.jpg" alt="First slide" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="item" data-caption="Cognitive Health Promotion Activities">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events3.jpeg" alt="Second slide" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="item" data-caption="Cognitive Health Promotion Activities">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events2.jpeg" alt="Third slide" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="item" data-caption="Keyi Presents Her Project at a Conference">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events9.jpg" alt="Fourth slide" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="item" data-caption="Lab Gathering for a Hot Pot">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events10.jpg" alt="Fifth slide" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="item" data-caption="Lab Gathering">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event11.JPG" alt="Sixth slide" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="item" data-caption="Cognitive Hhealth Promotion Activities">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events1.jpeg" alt="Seventh slide" style="width:100%;height:100%;object-fit:cover;">
+      </div>
     </div>
-    <div class="item">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event14.jpg" alt="20240815-2" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>LAB Lab anual lunch gathering</b></span>
-    </span>
-    </div>
-    <div class="item">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event12.jpg" alt="First slide" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>First LAB Lab meeting on Fall 2023</b></span>
-    </span>
-    </div>
-    <div class="item">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events3.jpeg" alt="Second slide" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>Cognitive health promotion activities</b></span>
-    </span>
-    </div>
-    <div class="item">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events2.jpeg" alt="Third slide" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>Cognitive health promotion activities</b></span>
-    </span>
-    </div>
-    <div class="item">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events9.jpg" alt="Fourth slide" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>Keyi presents her project at a conference</b></span>
-    </span>
-    </div>
-    <div class="item">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events10.jpg" alt="Fifth slide" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>lab gathering for a hot pot</b></span>
-    </span>
-    </div>
-    <div class="item">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event11.JPG" alt="Sixth slide" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>lab gathering</b></span>
-    </span>
-    </div>
-    <div class="item">
-    <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events1.jpeg" alt="Seventh slide" style="width:100%;height:100%;object-fit:cover;">
-    <span class="carousel-caption-custom">
-      <span class="carousel-caption-bg"></span>
-      <span class="carousel-caption-text"><b>Cognitive health promotion activities</b></span>
-    </span>
-    </div>
+    <!-- 左右切换按钮 -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background:none; left: 10px;">
+      <span style="font-size:36px;line-height:1;">&lt;</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next" style="background:none; right: 10px;">
+      <span style="font-size:36px;line-height:1;">&gt;</span>
+    </a>
   </div>
-  <!-- 左右切换按钮 -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background:none; left: 10px;">
-    <span style="font-size:36px;line-height:1;">&lt;</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next" style="background:none; right: 10px;">
-    <span style="font-size:36px;line-height:1;">&gt;</span>
-  </a>
-  </div>
+  <!-- 全局唯一caption容器 -->
+  <span id="global-carousel-caption" class="carousel-caption-custom" style="pointer-events:auto;">
+    <span class="carousel-caption-bg"></span>
+    <span class="carousel-caption-text"></span>
+  </span>
 </div>
 <div style="font-size:20px;max-width:1200px;margin:40px auto 0 auto;">
   {{ content }}
@@ -210,27 +180,26 @@ $(function(){
   var pendingDirection = null;
   var $carousel = $('#myCarousel');
   var $items = $carousel.find('.item');
-  var captionFadeDuration = 600; // 与CSS一致
+  var captionFadeDuration = 600;
+  var $captionText = $('#global-carousel-caption .carousel-caption-text');
+  var $captionBg = $('#global-carousel-caption .carousel-caption-bg');
 
   function getActiveIndex() {
     return $items.index($carousel.find('.item.active'));
   }
-
-  // 只用class控制渐变
+  function getCaption(idx) {
+    return $items.eq(idx).attr('data-caption') || '';
+  }
   function showCaption(idx) {
-    var $captionText = $items.eq(idx).find('.carousel-caption-text');
+    $captionText.text(getCaption(idx));
     $captionText.addClass('show');
   }
   function hideCurrentCaption(callback) {
-    var idx = getActiveIndex();
-    var $captionText = $items.eq(idx).find('.carousel-caption-text');
     $captionText.removeClass('show');
-    // 等待CSS动画结束再回调
     setTimeout(callback, captionFadeDuration);
   }
-
   // 初始化
-  $items.find('.carousel-caption-text').removeClass('show');
+  $captionText.removeClass('show');
   showCaption(0);
 
   $('.left.carousel-control, .right.carousel-control').off('click').on('click', function(e){
@@ -241,12 +210,10 @@ $(function(){
     pendingDirection = dir;
     hideCurrentCaption(function(){
       $carousel.carousel(dir);
-      // 刷新自动播放计时器
       $carousel.carousel('pause');
       $carousel.carousel('cycle');
     });
   });
-
   $('.carousel-indicators li').off('click').on('click', function(e){
     e.preventDefault();
     if(isSliding) return;
@@ -258,7 +225,6 @@ $(function(){
       $carousel.carousel(idx);
     });
   });
-
   $carousel.on('slid.bs.carousel', function(){
     var idx = getActiveIndex();
     showCaption(idx);
