@@ -164,8 +164,8 @@ body, html, * {
 .navbar {
   // height: 200px; // 恢复为原始高度
   // min-height: 110px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 0 !important; // 去除下边距
 }
 
@@ -240,13 +240,13 @@ header {
 
 /* 让header在轮播区域时变透明，离开轮播区域时恢复背景色 */
 .navbar.navbar-fixed-top.transparent-header {
-  background: rgba(255,255,255,0.15) !important;
+  background: rgba(255,255,255,0.0);
   transition: background 0.4s;
   box-shadow: none;
 }
 
 .navbar.navbar-fixed-top.solid-header {
-  background: #fff !important;
+  background: #66B3FF;
   transition: background 0.4s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
