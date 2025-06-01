@@ -2,12 +2,7 @@
 layout: default
 ---
 <style>
-body{
-  background-image:url('{{ site.baseurl }}/images/logo/lab-logo.png');
-  background-repeat:no-repeat;
-  background-position: 95%  50%;
-  background-size: 40% auto;
-}
+/* 已去除 body 背景 logo，避免重叠 */
 #homeid.home-center {
   width: 100%;
   max-width: 100%;
@@ -16,15 +11,14 @@ body{
   box-sizing: border-box;
 }
 .carousel-fullwidth-wrapper {
-  width: 100vw;
+  width: 100%; /* 修复：由100vw改为100%，避免左侧空隙 */
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  left: 0;
+  right: 0;
+  margin: 0;
   overflow: hidden;
   background: #fff;
-  /* margin-top: 100px !important; 新增：让轮播区域整体下移100px */
+  z-index: 0;
 }
 #myCarousel.carousel {
   width: 100%;
@@ -106,6 +100,9 @@ body{
 .right.carousel-control {
   right: 10px !important;
 }
+body {
+  padding-top: 0 !important;
+}
 </style>
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/css/bootstrap.min.css">
 <script src="{{ site.url }}{{ site.baseurl }}/lib/jquery/jquery-1.11.0.min.js"></script>
@@ -170,14 +167,9 @@ body{
 </div>
 <!-- <div style="font-size:20px;max-width:1200px;margin:40px auto 0 auto;padding-left:200px;padding-right:200px;"> -->
 <!-- 文字区域 about the lab -->
-<div style="font-size:24px; display: flex;">
-  <div style="width: 50%; text-align: left; padding-left: 5vw; box-sizing: border-box;">
-    {{ content }}
-  </div>
-  <div style="width: 50%;"></div>
+<div style="width: 100%; text-align: left; padding-left: 1vw; padding-right: 1vw; box-sizing: border-box;">
+  {{ content }}
 </div>
-<img class="img-fluid" src="{{ site.baseurl }}/images/home/{{page.image}}"
-    style="width: 90%;display:block;margin:40px auto 0 auto;">
 
 <script>
 $(function(){

@@ -10,7 +10,24 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.navbar .container-fluid {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .team_container {
@@ -25,6 +42,8 @@ header {
 }
 
 .about-lab-narrow-margin {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
   margin-left: 10px;
   margin-right: 10px;
 }
