@@ -2,7 +2,7 @@
 layout: member
 category: phd student
 title: Hanxiang YU
-image: hanqiang-yu.jpeg
+image: hanxiang-yu.jpeg
 role: PhD Student
 email: mc25812@connect.um.edu.mo
 permalink: 'team/hanqiang-yu'

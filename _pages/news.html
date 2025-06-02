@@ -5,7 +5,7 @@ excerpt: "RT2 Lab at Institut Curie"
 sitemap: false
 permalink: /news.html
 ---
-<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/lib/bootstrap.min.css">
 <script src="{{ site.url }}{{ site.baseurl }}/lib/jquery/jquery-1.11.0.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/js/bootstrap.min.js"></script>
 
@@ -18,15 +18,15 @@ permalink: /news.html
                
             <div style="max-width:70%;margin-left:15%;">
                 {% if article.images %} 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
+                <div id="newsCarousel-{{ forloop.index }}" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
                     <!-- 轮播（Carousel）指标 -->
                     <ol class="carousel-indicators car">
                         {% assign a=0 %}
                         {% for num in article.images %}
                             {% if a==0 %}
-                                <li data-target="#myCarousel" data-slide-to="{{a}}" class="active"></li>
+                                <li data-target="#newsCarousel-{{ forloop.index }}" data-slide-to="{{a}}" class="active"></li>
                             {% else %}
-                                <li data-target="#myCarousel" data-slide-to="{{a}}"></li>
+                                <li data-target="#newsCarousel-{{ forloop.index }}" data-slide-to="{{a}}"></li>
                             {% endif %}
                             {% assign a = a | plus: 1 %}
                         {% endfor %}

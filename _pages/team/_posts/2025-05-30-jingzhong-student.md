@@ -4,7 +4,7 @@ category: phd student
 title: Jing ZHONG
 image: jing-zhong.jpg
 role: PhD Student
-email: mc46412@um.edu.mo
+email: yc57388@um.edu.mo
 permalink: 'team/jing-zhong'
 social:
     twitter:  

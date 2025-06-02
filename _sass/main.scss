@@ -30,6 +30,10 @@ header {
   border: none;
 }
 
+.navbar-brand.lab-logo {
+  white-space: nowrap;
+}
+
 .team_container {
     width: 100%; // 恢复为100%，避免vw导致溢出
     margin: 0 auto;

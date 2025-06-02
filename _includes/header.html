@@ -1,4 +1,4 @@
-<header>
+<header style="margin-left: 5vw; margin-right: 5vw;">
   <div class="navbar navbar-default navbar-fixed-top transparent-header" role="navigation">		
     <div class="container-fluid">
 	  <div class="navbar-header">
@@ -26,12 +26,17 @@
   </div>
 </header>
 <script>
-// 监听滚动，切换header透明/实色
 (function() {
   function updateHeaderTransparency() {
     var $navbar = document.querySelector('.navbar-fixed-top');
     var carousel = document.getElementById('myCarousel');
-    if (!$navbar || !carousel) return;
+    if (!$navbar) return;
+    if (!carousel) {
+      // 非首页，始终蓝色header
+      $navbar.classList.remove('transparent-header');
+      $navbar.classList.add('solid-header');
+      return;
+    }
     var carouselRect = carousel.getBoundingClientRect();
     // 只要header底部还在轮播区域内就透明，否则变实色
     if (carouselRect.bottom > 80) {

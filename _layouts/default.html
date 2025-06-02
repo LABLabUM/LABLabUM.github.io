@@ -7,13 +7,23 @@
 
     {% include header.html %}
 
-    <div class="container-fluid"
+    {% if page.url == "/" or page.layout == "home" %}
+      <div class="home-container-fluid">
       <div class="col-sm-12">
         <div class="row">
-          {{ content }}
+        {{ content }}
         </div>
       </div>
-    </div>
+      </div>
+    {% else %}
+      <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="row">
+        {{ content }}
+        </div>
+      </div>
+      </div>
+    {% endif %}
     <br>
     {% include footer.html %}
   </body>
