@@ -49,6 +49,12 @@ body {
   padding: 0 30vw 0 30vw;
 }
 
+.tight-container-fluid {
+  @extend .container-fluid;
+  margin: 0 0 0 0 ;
+  padding: 0 30vw 0 30vw;
+}
+
 .navbar .container-fluid {
   margin: 0 0 0 0;
 }
