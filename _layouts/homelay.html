@@ -174,7 +174,6 @@ body {
 <script>
 $(function(){
   var isSliding = false;
-  var pendingDirection = null;
   var $carousel = $('#myCarousel');
   var $items = $carousel.find('.item');
   var captionFadeDuration = 600;
@@ -191,42 +190,50 @@ $(function(){
     $captionText.text(getCaption(idx));
     $captionText.addClass('show');
   }
-  function hideCurrentCaption(callback) {
+  function hideCurrentCaption() {
     $captionText.removeClass('show');
-    setTimeout(callback, captionFadeDuration);
+    // 移除setTimeout回调逻辑
   }
   // 初始化
   $captionText.removeClass('show');
   showCaption(0);
 
+  // 修改左右控制按钮事件
   $('.left.carousel-control, .right.carousel-control').off('click').on('click', function(e){
     e.preventDefault();
+    $carousel.carousel('pause').carousel('cycle');
+
     if(isSliding) return;
+
     isSliding = true;
-    var dir = $(this).hasClass('left') ? 'prev' : 'next';
-    pendingDirection = dir;
-    hideCurrentCaption(function(){
-      $carousel.carousel(dir);
-      $carousel.carousel('pause');
-      $carousel.carousel('cycle');
-    });
+    const dir = $(this).hasClass('left') ? 'prev' : 'next';
+
+    // 立即触发轮播切换（不再等待caption动画）
+    $carousel.carousel(dir);
+
+    // 并行处理caption隐藏
+    hideCurrentCaption();
   });
+
+  // 修改指示器点击事件（同样逻辑）
   $('.carousel-indicators li').off('click').on('click', function(e){
     e.preventDefault();
+    $carousel.carousel('pause').carousel('cycle');
+
     if(isSliding) return;
-    var idx = $(this).data('slide-to');
+
+    const idx = $(this).data('slide-to');
     if(idx === getActiveIndex()) return;
+
     isSliding = true;
-    pendingDirection = idx;
-    hideCurrentCaption(function(){
-      $carousel.carousel(idx);
-    });
+    $carousel.carousel(idx); // 立即切换
+    hideCurrentCaption(); // 并行处理
   });
+
   $carousel.on('slid.bs.carousel', function(){
     var idx = getActiveIndex();
     showCaption(idx);
     isSliding = false;
-    pendingDirection = null;
   });
 });
 </script>
