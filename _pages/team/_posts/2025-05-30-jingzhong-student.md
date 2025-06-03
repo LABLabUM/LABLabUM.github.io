@@ -1,7 +1,7 @@
 ---
 layout: member
 category: phd student
-title: Jing ZHONG
+title: Lyia, Jing ZHONG
 image: jing-zhong.jpg
 role: PhD Student
 email: yc57388@um.edu.mo
