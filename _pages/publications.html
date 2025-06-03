@@ -13,9 +13,27 @@ permalink: /publications/
 
     {% for publi in site.data.publications %}
         <div class="panel-heading">
-            <span style="font-size:20px;">
-                {{ publi.citation }}
+            <span style="font-size:20px; font-weight:bold;">
+                {% if publi.link %}
+                    <a href="{{ publi.link }}" target="_blank" style="color:inherit;">{{ publi.title }}</a>
+                {% else %}
+                    {{ publi.title }}
+                {% endif %}
             </span>
+            <div style="font-size:16px; color:#555;">
+                {% if publi.authors %}
+                    <span>{{ publi.authors }}</span><br>
+                {% endif %}
+                {% if publi.journal %}
+                    <span><i>{{ publi.journal }}</i></span>
+                {% endif %}
+                <!-- {% if publi.year %} -->
+                    <!-- <span>({{ publi.year }})</span> -->
+                <!-- {% endif %} -->
+                {% if publi.doi %}
+                    <br><a href="https://doi.org/{{ publi.doi }}" target="_blank">DOI: {{ publi.doi }}</a>
+                {% endif %}
+            </div>
         </div>
     {% endfor %}
     </div>
