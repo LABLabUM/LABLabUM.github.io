@@ -1,7 +1,7 @@
 ---
 layout: member
 category: phd student
-title: Zhengyuan LIU
+title: Tony, Zhengyuan LIU
 image: zhengyuan.jpg
 role: PhD Student
 email: yc573372@um.edu.mo
@@ -17,6 +17,4 @@ social:
 research_interests:
 - I am currently doing my Master's degree in Centre for Cognitive and Brian Science, University of Macau. I completed my undergraduate education at School of Psychology, South China Normal University, and graduated with a Bachelor of Science degree in Psychology (Base Class) with honours. During the four-year undergraduate, I joined Professor Ruiming Wang's Lab and well cooperated with various lab members in doing studies in Psycholinguistics as well as other related areas. 
 - My research interests mainly involve psycholinguistics, bilingualism and speech. Currently, I am particularly interested in how bilinguals process accent when listening to speech from a second language, which leads me to digging out the very essence of accent in our human brains. I’d like to consider behavioural experiments, neuroimaging methodologies (EEG/fMRI) as my main techniques, while I am also passionate about introducing Python into my researches and have done some scripts that helped with audio editing.
-
-- 
 ---
