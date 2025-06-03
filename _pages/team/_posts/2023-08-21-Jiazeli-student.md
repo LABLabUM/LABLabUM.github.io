@@ -1,7 +1,7 @@
 ---
 layout: member
 category: Lab Alumni
-title: Jiaze LI
+title: Zoey, Jiaze LI
 image: jiaze.jpg
 role: Lab Alum
 email: mc36439@um.edu.mo
