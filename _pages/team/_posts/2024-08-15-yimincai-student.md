@@ -1,7 +1,7 @@
 ---
 layout: member
 category: master student
-title: Yimin CAI
+title: Troy, Yimin CAI
 image: yimincai.jpg
 role: Master Student
 email: mc46413@um.edu.mo

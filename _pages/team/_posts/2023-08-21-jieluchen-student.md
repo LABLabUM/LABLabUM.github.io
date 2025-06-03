@@ -1,7 +1,7 @@
 ---
 layout: member
 category: Lab Alumni
-title: Jielu CHEN
+title: Sunny CHAN, Jielu CHEN
 image: jielu.jpg
 role: Lab Alum
 email: mc36435@@um.edu.mo

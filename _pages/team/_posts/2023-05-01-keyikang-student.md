@@ -1,7 +1,7 @@
 ---
 layout: member
 category: phd student
-title: Keyi KANG
+title: Connie, Keyi KANG
 image: keyi-kang.jpg
 role: PhD Student
 permalink: 'team/keyi-kang'
