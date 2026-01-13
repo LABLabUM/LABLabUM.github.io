@@ -4,7 +4,7 @@ category: phd student
 title: Tony, Zhengyuan LIU
 image: zhengyuan.jpg
 role: PhD Student
-email: yc573372@um.edu.mo
+email: yc57337@um.edu.mo
 permalink: 'team/zhengyuan-liu'
 social:
     twitter:  
