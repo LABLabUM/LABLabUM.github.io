@@ -12,7 +12,12 @@ publications = []
 for entry in soup.select('.gsc_a_tr'):
     title_tag = entry.select_one('.gsc_a_at')
     title = title_tag.text if title_tag else ''
-    link = 'https://scholar.google.com' + title_tag['href'] if title_tag and title_tag.has_attr('href') else ''
+    # Fix duplicate URL prefix issue
+    href = title_tag['href'] if title_tag and title_tag.has_attr('href') else ''
+    if href.startswith('https://scholar.google.com'):
+        link = href
+    else:
+        link = 'https://scholar.google.com' + href if href else ''
     # 获取作者和期刊信息
     gray_divs = entry.select('.gsc_a_t .gs_gray')
     authors = gray_divs[0].text if len(gray_divs) > 0 else ''
@@ -28,5 +33,9 @@ for entry in soup.select('.gsc_a_tr'):
     })
 
 # 保存为JSON文件
-with open('_data\publications.json', 'w', encoding='utf-8') as f:
+import os
+# Get the directory where the script is located
+script_dir = os.path.dirname(os.path.abspath(__file__))
+output_path = os.path.join(script_dir, 'publications.json')
+with open(output_path, 'w', encoding='utf-8') as f:
     json.dump(publications, f, ensure_ascii=False, indent=2)
