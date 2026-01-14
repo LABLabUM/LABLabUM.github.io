@@ -1,7 +1,7 @@
 ---
 layout: member
 category: master student
-title: Huitian, CHEN
+title: Huitian CHEN
 image: huitian.png
 role: Master Student
 email: mc56500@um.edu.mo
