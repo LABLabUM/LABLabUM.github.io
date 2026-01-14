@@ -2,7 +2,7 @@
 layout: member
 category: Principle Investigator
 title: Haoyun ZHANG
-image: haoyun-zhang.png
+image: haoyun-zhang.jpg
 role: Principal Investigator
 permalink: 'team/prof-haoyun-zhang'
 email: haoyunzhang@um.edu.mo
