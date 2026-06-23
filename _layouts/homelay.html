@@ -131,9 +131,10 @@ body {
     <!-- 轮播（Carousel）项目 — 由 _data/slider.yml 自动生成 -->
     <div class="carousel-inner" style="height:950px;">
       {% for slide in visible_slides %}
-        <div class="item{% if forloop.first %} active{% endif %}" data-caption="{{ slide.caption | escape }}">
+        {% assign show_caption = slide.caption | default: '' %}
+        <div class="item{% if forloop.first %} active{% endif %}"{% if show_caption != '' and slide.no_caption != true %} data-caption="{{ slide.caption | escape }}"{% endif %}>
           <a href="{{ site.url }}{{ site.baseurl }}/images/slider/{{ slide.file }}" target="_blank" rel="noopener" class="slider-zoom-link" title="点击查看原图 / Click for full resolution">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ slide.thumb }}" alt="{{ slide.caption | escape }} (click for full size)" style="width:100%;height:100%;object-fit:cover;">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ slide.thumb }}" alt="{% if show_caption != '' and slide.no_caption != true %}{{ slide.caption | escape }} (click for full size){% else %}{{ slide.file | replace: '.JPG' | replace: '.jpg' | replace: '_' | capitalize }} (click for full size){% endif %}" style="width:100%;height:100%;object-fit:cover;">
           </a>
         </div>
       {% endfor %}
@@ -174,12 +175,19 @@ $(function(){
     return $items.eq(idx).attr('data-caption') || '';
   }
   function showCaption(idx) {
-    $captionText.text(getCaption(idx));
-    $captionText.addClass('show');
+    var text = getCaption(idx);
+    if (text && text.trim().length > 0) {
+      // 有 caption：显示文字 + 黑色背景
+      $captionText.text(text).addClass('show');
+      $captionBg.css('display', 'block');
+    } else {
+      // 没 caption：完全隐藏
+      $captionText.removeClass('show').text('');
+      $captionBg.css('display', 'none');
+    }
   }
   function hideCurrentCaption() {
     $captionText.removeClass('show');
-    // 移除setTimeout回调逻辑
   }
   // 初始化
   $captionText.removeClass('show');

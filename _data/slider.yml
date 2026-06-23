@@ -7,9 +7,16 @@
 # 3. Add 4 lines at the TOP of this file:
 #      - file: <name>.jpg
 #        thumb: thumbs/<name>.jpg
-#        caption: "English caption here"
+#        caption: "English caption here"     # 可选 —— 留空则不显示 caption bar
 #        caption_zh: "中文描述（可选）"
+#        date: YYYY-MM-DD                    # 可选，只用来排序参考
 # 4. Commit + push. Site auto-rebuilds.
+#
+# ===== Caption 可选 =====
+# 如果 `caption:` 留空（或整行省略）：
+#   - 不显示底部黑色 caption bar
+#   - 图片自动占满 carousel 高度
+#   - 适合"纯视觉"图片（无文字描述也能看懂）
 #
 # ===== New images go at the TOP =====
 # First image = first slide shown (active).
@@ -88,6 +95,7 @@
 
 - file: photo_260113_3.jpg
   thumb: thumbs/photo_260113_3.jpg
-  caption: "Annual Lab Gathering in 2025"
-  caption_zh: "2025 年度实验室聚餐"
+  # caption: ""   # ← 示例：空 caption 字符串（不显示 caption bar）
+  # caption_zh: ""
   date: 2026-01-13
+  no_caption: true   # 测试无 caption 模式 — 图片全屏显示
