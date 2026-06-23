@@ -6,35 +6,167 @@ sitemap: false
 permalink: /publications/
 ---
 
-<h2 style="color:#66B3FF; line-height:2;"><a id="staff"></a><b>Publications</b></h2>
+<style>
+.pub-item {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 16px;
+  padding: 14px;
+  background: #fafafa;
+  border-left: 3px solid #66B3FF;
+  border-radius: 4px;
+}
+.pub-cover {
+  flex: 0 0 96px;
+  width: 96px;
+  height: 128px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: rgba(255,255,255,0.92);
+  user-select: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  position: relative;
+  letter-spacing: 0.5px;
+}
+.pub-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;        /* 出版社 logo 多是 SVG，保持比例 */
+  padding: 8px;
+  display: block;
+  background: #fff;
+}
+.pub-cover.pub-cover-fallback {
+  /* fallback (lab logo): 无彩色背景，让 logo 自身显示 */
+  background: #ffffff !important;
+  padding: 12px;
+}
+.pub-content {
+  flex: 1;
+  min-width: 0;
+}
+.pub-item .pub-title {
+  font-size: 17px;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+.pub-item .pub-authors {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+}
+.pub-item .pub-venue {
+  font-size: 14px;
+  color: #444;
+  font-style: italic;
+  margin-top: 2px;
+}
+.pub-item .pub-meta {
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+}
+.pub-item .pub-meta a {
+  color: #66B3FF;
+  text-decoration: none;
+}
+.pub-item .pub-meta a:hover {
+  text-decoration: underline;
+}
+.pub-tag {
+  display: inline-block;
+  font-size: 10px;
+  padding: 1px 7px;
+  border-radius: 8px;
+  margin-right: 4px;
+  background: #e6f2ff;
+  color: #1a5490;
+  vertical-align: middle;
+}
+.pub-tag.oa {
+  background: #d4f4dd;
+  color: #1a5d2e;
+}
+</style>
 
-<div class="panel-group" id="accordion">
-    <div class="panel panel-default">
+<h2 style="color:#66B3FF; line-height:2;"><b>Publications</b></h2>
 
-    {% for publi in site.data.publications %}
-        <div class="panel-heading">
-            <span style="font-size:20px; font-weight:bold;">
-                {% if publi.link %}
+{% assign pubs = site.data.publications %}
+{% assign cover_cache = site.data.journal_covers | default: empty %}
+
+{% for publi in pubs %}
+    <div class="pub-item">
+        {% comment %}
+          Cover priority:
+            1. _data/journal_covers.yml cache (cover_url) — 真期刊封面
+            2. 首字母 fallback（venue 名 hash 配色）
+          Key: "{venue}|{year}"
+        {% endcomment %}
+        {% assign cover_key = publi.venue_name | default: publi.journal | append: '|' | append: publi.year %}
+        {% assign cover_entry = cover_cache[cover_key] %}
+        {% assign cover_url = cover_entry.cover_url | default: '' %}
+        {% assign has_real_cover = false %}
+        {% if cover_url and cover_url != '' %}
+          {% assign has_real_cover = true %}
+        {% endif %}
+        {% assign cover_initial = publi.venue_name | default: publi.journal | slice: 0, 1 | upcase %}
+        {% assign venue_hash = publi.venue_name | default: publi.journal | size %}
+        {% assign color_idx = venue_hash | modulo: 6 %}
+        <div class="pub-cover{% if has_real_cover %} pub-cover-img{% else %} pub-cover-fallback{% endif %}" style="{% unless has_real_cover %}background: linear-gradient(135deg,
+            {% if color_idx == 0 %}#b8c5d3, #8a9bb0
+            {% elsif color_idx == 1 %}#c5b8d3, #9b8ab0
+            {% elsif color_idx == 2 %}#d3c0b8, #b09a8a
+            {% elsif color_idx == 3 %}#b8d3c5, #8ab09b
+            {% elsif color_idx == 4 %}#d3b8b8, #b08a8a
+            {% else %}#b8b8d3, #8a8ab0{% endif %}){% endunless %}">
+            {% if has_real_cover %}
+                <img src="{{ cover_url }}" alt="{{ publi.venue_name | default: publi.journal }} cover" loading="lazy" title="{{ publi.venue_name | default: publi.journal }} (journal cover)">
+            {% elsif publi.publisher_logo %}
+                <img src="{{ publi.publisher_logo }}" alt="{{ publi.publisher_name | default: publi.venue_name }}" loading="lazy" title="{{ publi.publisher_name | default: publi.venue_name }} (publisher logo)">
+            {% else %}
+                <img src="/images/logo/lab-logo.png" alt="LAB Lab" loading="lazy" title="LAB Lab">
+            {% endif %}
+        </div>
+        <div class="pub-content">
+            <div class="pub-title">
+                {% if publi.doi %}
+                    <a href="https://doi.org/{{ publi.doi | replace: 'https://doi.org/', '' }}" target="_blank" style="color:inherit;">{{ publi.title }}</a>
+                {% elsif publi.link %}
                     <a href="{{ publi.link }}" target="_blank" style="color:inherit;">{{ publi.title }}</a>
                 {% else %}
                     {{ publi.title }}
                 {% endif %}
-            </span>
-            <div style="font-size:16px; color:#555;">
-                {% if publi.authors %}
-                    <span>{{ publi.authors }}</span><br>
+            </div>
+            {% if publi.authors %}
+                <div class="pub-authors">{{ publi.authors }}</div>
+            {% endif %}
+            {% if publi.journal %}
+                <div class="pub-venue">{{ publi.journal }}</div>
+            {% endif %}
+            <div class="pub-meta">
+                {% if publi.year %}<span style="font-weight:bold;">({{ publi.year }})</span>{% endif %}
+                {% if publi.venue_type %}
+                    <span class="pub-tag">{{ publi.venue_type }}</span>
                 {% endif %}
-                {% if publi.journal %}
-                    <span><i>{{ publi.journal }}</i></span>
+                {% if publi.is_oa %}
+                    <span class="pub-tag oa">OPEN ACCESS</span>
                 {% endif %}
-                <!-- {% if publi.year %} -->
-                    <!-- <span>({{ publi.year }})</span> -->
-                <!-- {% endif %} -->
                 {% if publi.doi %}
-                    <br><a href="https://doi.org/{{ publi.doi }}" target="_blank">DOI: {{ publi.doi }}</a>
+                    <a href="https://doi.org/{{ publi.doi | replace: 'https://doi.org/', '' }}" target="_blank">DOI</a>
+                {% endif %}
+                {% if publi.cited_by_count and publi.cited_by_count > 0 %}
+                    · cited {{ publi.cited_by_count }} times
                 {% endif %}
             </div>
         </div>
-    {% endfor %}
     </div>
-</div>
+{% endfor %}

@@ -103,62 +103,40 @@ layout: default
 body {
   padding-top: 0 !important;
 }
+.slider-zoom-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+.slider-zoom-link img {
+  transition: opacity 0.2s;
+}
+.slider-zoom-link:hover img {
+  opacity: 0.92;
+}
 </style>
 <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/lib/bootstrap.min.css">
 <script src="{{ site.url }}{{ site.baseurl }}/lib/jquery/jquery-1.11.0.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/lib/bootstrap/js/bootstrap.min.js"></script>
 <div class="carousel-fullwidth-wrapper">
   <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover">
-    <!-- 轮播（Carousel）指标 -->
+    <!-- 轮播（Carousel）指标 — 由 _data/slider.yml 自动生成 -->
     <ol class="carousel-indicators car">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-      <li data-target="#myCarousel" data-slide-to="4"></li>
-      <li data-target="#myCarousel" data-slide-to="5"></li>
-      <li data-target="#myCarousel" data-slide-to="6"></li>
-      <li data-target="#myCarousel" data-slide-to="7"></li>
-      <li data-target="#myCarousel" data-slide-to="8"></li>
+      {% assign visible_slides = site.data.slider | where_exp: "s", "s.hidden != true" %}
+      {% for slide in visible_slides %}
+        <li data-target="#myCarousel" data-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active"{% endif %}></li>
+      {% endfor %}
     </ol>
-    <!-- 轮播（Carousel）项目 -->
+    <!-- 轮播（Carousel）项目 — 由 _data/slider.yml 自动生成 -->
     <div class="carousel-inner" style="height:950px;">
-      <div class="item active" data-caption="LAB Lab Meeting and Birthday Celebration">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event13.JPG" alt="20240815-1" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="LAB Lab Anual Lunch Gathering">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event14.jpg" alt="20240815-2" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="First LAB Lab Meeting on Fall 2023">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event12.jpg" alt="First slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="Cognitive Health Promotion Activities">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events3.jpeg" alt="Second slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="Cognitive Health Promotion Activities">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events2.jpeg" alt="Third slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="Keyi Presents Her Project at a Conference">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events9.jpg" alt="Fourth slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="Lab Gathering for a Hot Pot">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events10.jpg" alt="Fifth slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="Lab Gathering">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/event11.JPG" alt="Sixth slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="Cognitive Health Promotion Activities">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/events1.jpeg" alt="Seventh slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <!-- <div class="item" data-caption="Cognitive Health Promotion Activities">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/photo_260113_1.jpg" alt="Seventh slide" style="width:100%;height:100%;object-fit:cover;">
-      </div> -->
-      <div class="item" data-caption="The 19th ICPEAL">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/photo_260113_2.jpg" alt="Seventh slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
-      <div class="item" data-caption="Annual Lab Gathering in 2025">
-        <img src="{{ site.url }}{{ site.baseurl }}/images/slider/photo_260113_3.jpg" alt="Seventh slide" style="width:100%;height:100%;object-fit:cover;">
-      </div>
+      {% for slide in visible_slides %}
+        <div class="item{% if forloop.first %} active{% endif %}" data-caption="{{ slide.caption | escape }}">
+          <a href="{{ site.url }}{{ site.baseurl }}/images/slider/{{ slide.file }}" target="_blank" rel="noopener" class="slider-zoom-link" title="点击查看原图 / Click for full resolution">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ slide.thumb }}" alt="{{ slide.caption | escape }} (click for full size)" style="width:100%;height:100%;object-fit:cover;">
+          </a>
+        </div>
+      {% endfor %}
     </div>
     <!-- 左右切换按钮 -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background:none; left: 10px;">

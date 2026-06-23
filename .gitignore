@@ -1,5 +1,13 @@
 _site
 .sass-cache
 .jekyll-metadata
-.DS_Store
 .jekyll-cache
+.DS_Store
+
+# Ruby/Bundler local install artifacts (don't commit — these are per-machine)
+.bundle/
+vendor/bundle/
+
+# Python (figure out if needed — usually no, but safe to ignore)
+__pycache__/
+*.pyc

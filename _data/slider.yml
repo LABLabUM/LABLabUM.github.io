@@ -1,0 +1,93 @@
+# Homepage carousel images
+#
+# ===== How to add a new image =====
+# 1. Copy the image to images/slider/<name>.jpg
+# 2. Run: ./scripts/optimize_slider.sh images/slider/<name>.jpg
+#    (This creates images/slider/thumbs/<name>.jpg without touching the original.)
+# 3. Add 4 lines at the TOP of this file:
+#      - file: <name>.jpg
+#        thumb: thumbs/<name>.jpg
+#        caption: "English caption here"
+#        caption_zh: "中文描述（可选）"
+# 4. Commit + push. Site auto-rebuilds.
+#
+# ===== New images go at the TOP =====
+# First image = first slide shown (active).
+# `hidden: true` to skip without deleting (e.g. photo_260113_1 below).
+#
+# ===== Click-to-zoom =====
+# The original image (file) is shown when the user clicks the thumb on the homepage.
+# Don't delete the original — only the thumb is what shows in the carousel.
+
+- file: event13.JPG
+  thumb: thumbs/event13.jpg
+  caption: "LAB Lab Meeting and Birthday Celebration"
+  caption_zh: "实验室会议与生日庆祝"
+  date: 2024-08-15
+
+- file: event14.jpg
+  thumb: thumbs/event14.jpg
+  caption: "LAB Lab Annual Lunch Gathering"
+  caption_zh: "实验室年度聚餐"
+  date: 2024-05-03
+
+- file: event12.jpg
+  thumb: thumbs/event12.jpg
+  caption: "First LAB Lab Meeting on Fall 2023"
+  caption_zh: "2023 年秋季首次实验室会议"
+  date: 2023-08-23
+
+- file: events3.jpeg
+  thumb: thumbs/events3.jpg
+  caption: "Cognitive Health Promotion Activities"
+  caption_zh: "认知健康促进活动"
+  date: 2023-XX-XX
+
+- file: events2.jpeg
+  thumb: thumbs/events2.jpg
+  caption: "Cognitive Health Promotion Activities"
+  caption_zh: "认知健康促进活动"
+  date: 2023-XX-XX
+
+- file: events9.jpg
+  thumb: thumbs/events9.jpg
+  caption: "Keyi Presents Her Project at a Conference"
+  caption_zh: "Keyi 在会议上展示她的课题"
+  date: 2023-XX-XX
+
+- file: events10.jpg
+  thumb: thumbs/events10.jpg
+  caption: "Lab Gathering for a Hot Pot"
+  caption_zh: "实验室火锅聚餐"
+  date: 2023-XX-XX
+
+- file: event11.JPG
+  thumb: thumbs/event11.jpg
+  caption: "Lab Gathering"
+  caption_zh: "实验室聚会"
+  date: 2023-XX-XX
+
+- file: events1.jpeg
+  thumb: thumbs/events1.jpg
+  caption: "Cognitive Health Promotion Activities"
+  caption_zh: "认知健康促进活动"
+  date: 2023-XX-XX
+
+- file: photo_260113_1.jpg
+  thumb: thumbs/photo_260113_1.jpg
+  caption: "Cognitive Health Promotion Activities"
+  caption_zh: "认知健康促进活动"
+  date: 2026-01-13
+  hidden: true   # was commented out in original HTML — keep hidden until reviewed
+
+- file: photo_260113_2.jpg
+  thumb: thumbs/photo_260113_2.jpg
+  caption: "The 19th ICPEAL"
+  caption_zh: "第 19 届 ICPEAL 国际会议"
+  date: 2026-01-13
+
+- file: photo_260113_3.jpg
+  thumb: thumbs/photo_260113_3.jpg
+  caption: "Annual Lab Gathering in 2025"
+  caption_zh: "2025 年度实验室聚餐"
+  date: 2026-01-13

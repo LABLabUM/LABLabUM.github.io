@@ -1,0 +1,82 @@
+- authors: Liu, Z., Yu, X., Hu, W. C., Ma, Y., Wang, R., & Zhang, H.
+  doi: 10.3758/s13428-025-02776-2
+  journal: Behavior Research Methods, 57(9), 247
+  note: Software paper — OpenAlex 把它归给了别的 Haoyun Zhang
+  publication_date: '2025-08-04'
+  source: manual
+  title: 'Praditor: A DBSCAN-based automation for speech onset detection'
+  venue_type: Journal Article
+  year: '2025'
+- authors: Liu, Z., Yu, X., Hu, W. C., Ma, Y., Wang, R., & Zhang, H.
+  doi: 10.3758/s13428-025-02799-9
+  journal: Behavior Research Methods
+  note: Praditor 的出版商更正
+  publication_date: '2025-08-04'
+  source: manual
+  title: 'Publisher Correction: Praditor: A DBSCAN-based automation for speech onset
+    detection'
+  venue_type: Correction
+  year: '2025'
+- authors: Zhang, H.
+  doi: ''
+  journal: Doctoral Dissertation, The Pennsylvania State University
+  note: 'PI 博士论文 — OpenAlex 不收 dissertation [pub_date estimated: typical PSU defense
+    window]'
+  publication_date: '2019-05-01'
+  source: manual
+  title: Exploring the Contribution of Executive Functions to Language Production
+    in Bilingual and Monolingual Speakers
+  venue_type: Dissertation
+  year: '2019'
+- authors: 张浩云, 马凤阳, 陈冰玏, & 郭桃梅
+  doi: ''
+  journal: 外语教学与研究, 44(5), 719–727
+  note: 中文核心期刊; OpenAlex 未收录
+  source: manual
+  title: 非熟练汉-英双语者在英语词汇阅读中汉语自动激活的再探讨
+  venue_type: Journal Article
+  year: '2012'
+- authors: 张浩云, 康春燕, & 郭桃梅
+  doi: ''
+  journal: 北京师范大学学报(自然科学版), 178–182
+  note: 中文核心期刊; OpenAlex 未收录
+  source: manual
+  title: Simon 效应的近红外研究
+  venue_type: Journal Article
+  year: '2014'
+- authors: Zhang, H., Wu, Y., & Guo, T.
+  doi: ''
+  journal: Psychophysiology, 50, S26–S27
+  note: PSYCHOPHYSIOLOGY 会议摘要; OpenAlex 不收会议摘要
+  source: manual
+  title: 'Using two dialects in everyday life improves executive functions: A semi-bilingual
+    advantage effect'
+  venue_type: Conference Abstract
+  year: '2013'
+- authors: Kang, K., Yang, M., Cai, Y., Chen, L., & Zhang, H.
+  doi: ''
+  journal: Cortex
+  note: Scholar-only — Cortex 2026, in press
+  source: manual
+  title: Syntactic complexity representation in sentence production reveals a fronto-temporal
+    syntactic network
+  venue_type: Journal Article
+  year: '2026'
+- authors: Nakamura, M. S., Zhang, H., & Diaz, M. T.
+  doi: ''
+  journal: Neurobiology of Language, 1-51
+  note: Scholar-only — Neurobiology of Language 2026, in press
+  source: manual
+  title: Age-Related Differences in Resting-State Functional Connectivity Predict
+    Specific Patterns of Speech Disfluency
+  venue_type: Journal Article
+  year: '2026'
+- authors: Yu, H., Xiao, Y., Hua, Y., & Zhang, H.
+  doi: ''
+  journal: 'Bilingualism: Language and Cognition, 1-13'
+  note: Scholar-only — Bilingualism 2026, in press
+  source: manual
+  title: 'Toward more comprehensive language use assessments in native and nonnative
+    languages: alternatives to the language history questionnaire'
+  venue_type: Journal Article
+  year: '2026'
