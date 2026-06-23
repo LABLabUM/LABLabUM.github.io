@@ -22,10 +22,16 @@
 # First image = first slide shown (active).
 # `hidden: true` to skip without deleting (e.g. photo_260113_1 below).
 #
+# ===== Date ordering convention =====
+# Order entries so that items with a known date appear first (newest → oldest),
+# and items with placeholder dates (`XXXX-XX-XX` or `2023-XX-XX`) appear last.
+# The carousel renders in file order — newer = earlier in the list.
+#
 # ===== Click-to-zoom =====
 # The original image (file) is shown when the user clicks the thumb on the homepage.
 # Don't delete the original — only the thumb is what shows in the carousel.
 
+# ----- 2026-06-22 — Keyi KANG's PhD defense (the most recent, all 5 photos) -----
 - file: keyi-defense-2026-hero.jpg
   thumb: thumbs/keyi-defense-2026-hero.jpg
   caption: "Congratulations to Dr. Keyi KANG on Her PhD Defense!"
@@ -56,6 +62,20 @@
   caption_zh: "康博士在答辩中作报告"
   date: 2026-06-22
 
+# ----- 2026-01-13 — ICPEAL & Lab hot pot gathering -----
+- file: photo_260113_2.jpg
+  thumb: thumbs/photo_260113_2.jpg
+  caption: "The 19th ICPEAL"
+  caption_zh: "第 19 届 ICPEAL 国际会议"
+  date: 2026-01-13
+
+- file: photo_260113_3.jpg
+  thumb: thumbs/photo_260113_3.jpg
+  caption: "Lab Hot Pot Gathering"
+  caption_zh: "实验室火锅聚餐"
+  date: 2026-01-13
+
+# ----- 2024 — Lab gatherings & birthday -----
 - file: event13.JPG
   thumb: thumbs/event13.jpg
   caption: "LAB Lab Meeting and Birthday Celebration"
@@ -68,11 +88,32 @@
   caption_zh: "实验室年度聚餐"
   date: 2024-05-03
 
+# ----- 2023-08-23 — First lab meeting on Fall 2023 (known exact date) -----
 - file: event12.jpg
   thumb: thumbs/event12.jpg
   caption: "First LAB Lab Meeting on Fall 2023"
   caption_zh: "2023 年秋季首次实验室会议"
   date: 2023-08-23
+
+# ----- 2023 / older — exact date unknown (placeholder dates) -----
+# These are kept in the order they were originally added.
+- file: events9.jpg
+  thumb: thumbs/events9.jpg
+  caption: "Keyi Presents Her Project at a Conference"
+  caption_zh: "Keyi 在会议上展示她的课题"
+  date: 2023-XX-XX
+
+- file: events10.jpg
+  thumb: thumbs/events10.jpg
+  caption: "Lab Gathering at Haidilao"
+  caption_zh: "实验室海底捞小聚"
+  date: 2023-XX-XX
+
+- file: event11.JPG
+  thumb: thumbs/event11.jpg
+  caption: "Lab Gathering"
+  caption_zh: "实验室聚会"
+  date: 2023-XX-XX
 
 - file: events3.jpeg
   thumb: thumbs/events3.jpg
@@ -84,24 +125,6 @@
   thumb: thumbs/events2.jpg
   caption: "Cognitive Health Promotion Activities"
   caption_zh: "认知健康促进活动"
-  date: 2023-XX-XX
-
-- file: events9.jpg
-  thumb: thumbs/events9.jpg
-  caption: "Keyi Presents Her Project at a Conference"
-  caption_zh: "Keyi 在会议上展示她的课题"
-  date: 2023-XX-XX
-
-- file: events10.jpg
-  thumb: thumbs/events10.jpg
-  caption: "Lab Gathering for a Hot Pot"
-  caption_zh: "实验室火锅聚餐"
-  date: 2023-XX-XX
-
-- file: event11.JPG
-  thumb: thumbs/event11.jpg
-  caption: "Lab Gathering"
-  caption_zh: "实验室聚会"
   date: 2023-XX-XX
 
 - file: events1.jpeg
@@ -116,16 +139,3 @@
   caption_zh: "认知健康促进活动"
   date: 2026-01-13
   hidden: true   # was commented out in original HTML — keep hidden until reviewed
-
-- file: photo_260113_2.jpg
-  thumb: thumbs/photo_260113_2.jpg
-  caption: "The 19th ICPEAL"
-  caption_zh: "第 19 届 ICPEAL 国际会议"
-  date: 2026-01-13
-
-- file: photo_260113_3.jpg
-  thumb: thumbs/photo_260113_3.jpg
-  # caption: ""   # ← 示例：空 caption 字符串（不显示 caption bar）
-  # caption_zh: ""
-  date: 2026-01-13
-  no_caption: true   # 测试无 caption 模式 — 图片全屏显示
