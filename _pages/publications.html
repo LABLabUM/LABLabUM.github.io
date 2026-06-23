@@ -9,12 +9,14 @@ permalink: /publications/
 <style>
 .pub-item {
   display: flex;
+  align-items: center;            /* 封面 + 文字上下居中 */
   gap: 18px;
   margin-bottom: 16px;
   padding: 14px;
   background: #fafafa;
-  border-left: 3px solid #66B3FF;
+  border-left: 3px solid var(--accent, #66B3FF);   /* 按出版社主色 */
   border-radius: 4px;
+  min-height: 128px;              /* 与封面同高，文字多时可继续撑高 */
 }
 .pub-cover {
   flex: 0 0 96px;
@@ -35,10 +37,23 @@ permalink: /publications/
   position: relative;
   letter-spacing: 0.5px;
 }
+/* 真期刊封面：填满 96x128，按比例裁切，去白边 */
+.pub-cover.pub-cover-img {
+  padding: 0;
+  background: transparent;
+}
+.pub-cover.pub-cover-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;              /* 填满，裁掉封面原有白边 */
+  padding: 0;
+  display: block;
+  background: transparent;
+}
 .pub-cover img {
   width: 100%;
   height: 100%;
-  object-fit: contain;        /* 出版社 logo 多是 SVG，保持比例 */
+  object-fit: contain;            /* 出版社 logo / fallback：保持比例 */
   padding: 8px;
   display: block;
   background: #fff;
@@ -104,7 +119,25 @@ permalink: /publications/
 {% assign cover_cache = site.data.journal_covers | default: empty %}
 
 {% for publi in pubs %}
-    <div class="pub-item">
+    {% comment %}
+      左侧竖条颜色 = 出版社主色（OpenAlex publisher_id → 颜色）。
+      数据见 _data/publisher_logos.yml / publications.json。
+    {% endcomment %}
+    {% case publi.publisher_id %}
+      {% when 'P4310320990' %}{% assign accent = '#1f5582' %}{% comment %}Elsevier — 深蓝（NeuroImage 风格）{% endcomment %}
+      {% when 'P4310319900' %}{% assign accent = '#2e7d32' %}{% comment %}Springer — 深绿（BRM 风格）{% endcomment %}
+      {% when 'P4310311721' %}{% assign accent = '#b8860b' %}{% comment %}Cambridge — 深金（CUP 风格）{% endcomment %}
+      {% when 'P4310320595' %}{% assign accent = '#9c2a2a' %}{% comment %}Wiley — 深红{% endcomment %}
+      {% when 'P4310320527' %}{% assign accent = '#e37400' %}{% comment %}Frontiers — 橙{% endcomment %}
+      {% when 'P4310319908' %}{% assign accent = '#c0392b' %}{% comment %}Nature Portfolio — 红{% endcomment %}
+      {% when 'P4310315718' %}{% assign accent = '#2c3e50' %}{% comment %}MIT Press — 近黑蓝{% endcomment %}
+      {% when 'P4310320547' %}{% assign accent = '#5d3a8e' %}{% comment %}Taylor & Francis — 紫{% endcomment %}
+      {% when 'P4310315671' %}{% assign accent = '#117864' %}{% comment %}Lippincott — 青绿{% endcomment %}
+      {% when 'P4310315706' %}{% assign accent = '#7d3c98' %}{% comment %}PLoS — 紫红{% endcomment %}
+      {% when 'P4310310987' %}{% assign accent = '#16a085' %}{% comment %}MDPI — 蓝绿{% endcomment %}
+      {% else %}{% assign accent = '#66B3FF' %}{% comment %}默认 / 未知 — 浅蓝{% endcomment %}
+    {% endcase %}
+    <div class="pub-item" style="--accent: {{ accent }};">
         {% comment %}
           Cover priority:
             1. _data/journal_covers.yml cache (cover_url) — 真期刊封面
