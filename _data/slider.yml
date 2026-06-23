@@ -26,6 +26,36 @@
 # The original image (file) is shown when the user clicks the thumb on the homepage.
 # Don't delete the original — only the thumb is what shows in the carousel.
 
+- file: keyi-defense-2026-hero.jpg
+  thumb: thumbs/keyi-defense-2026-hero.jpg
+  caption: "Congratulations to Dr. Keyi KANG on Her PhD Defense!"
+  caption_zh: "祝贺康可依博士通过博士论文答辩！"
+  date: 2026-06-22
+
+- file: keyi-defense-2026-committee.jpg
+  thumb: thumbs/keyi-defense-2026-committee.jpg
+  caption: "Dr. KANG with the Thesis Committee"
+  caption_zh: "康博士与答辩委员会合影"
+  date: 2026-06-22
+
+- file: keyi-defense-2026-lab10.jpg
+  thumb: thumbs/keyi-defense-2026-lab10.jpg
+  caption: "Lab Celebration After the Defense"
+  caption_zh: "答辩后实验室庆祝合影"
+  date: 2026-06-22
+
+- file: keyi-defense-2026-fss8.jpg
+  thumb: thumbs/keyi-defense-2026-fss8.jpg
+  caption: "Group Photo at the FSS Lobby"
+  caption_zh: "社科院大堂合影"
+  date: 2026-06-22
+
+- file: keyi-defense-2026-presenting.jpg
+  thumb: thumbs/keyi-defense-2026-presenting.jpg
+  caption: "Dr. KANG Presenting Her Thesis"
+  caption_zh: "康博士在答辩中作报告"
+  date: 2026-06-22
+
 - file: event13.JPG
   thumb: thumbs/event13.jpg
   caption: "LAB Lab Meeting and Birthday Celebration"
