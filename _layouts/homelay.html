@@ -132,9 +132,12 @@ body {
     <div class="carousel-inner" style="height:950px;">
       {% for slide in visible_slides %}
         {% assign show_caption = slide.caption | default: '' %}
+        {% assign pos = slide.position | default: 'center center' %}
+        {% assign scale = slide.scale | default: '1' %}
+        {% assign origin = slide.origin | default: 'center center' %}
         <div class="item{% if forloop.first %} active{% endif %}"{% if show_caption != '' and slide.no_caption != true %} data-caption="{{ slide.caption | escape }}"{% endif %}>
           <a href="{{ site.url }}{{ site.baseurl }}/images/slider/{{ slide.file }}" target="_blank" rel="noopener" class="slider-zoom-link" title="点击查看原图 / Click for full resolution">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ slide.thumb }}" alt="{% if show_caption != '' and slide.no_caption != true %}{{ slide.caption | escape }} (click for full size){% else %}{{ slide.file | replace: '.JPG' | replace: '.jpg' | replace: '_' | capitalize }} (click for full size){% endif %}" style="width:100%;height:100%;object-fit:cover;">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider/{{ slide.thumb }}" alt="{% if show_caption != '' and slide.no_caption != true %}{{ slide.caption | escape }} (click for full size){% else %}{{ slide.file | replace: '.JPG' | replace: '.jpg' | replace: '_' | capitalize }} (click for full size){% endif %}" style="width:100%;height:100%;object-fit:cover;object-position: {{ pos }};transform: scale({{ scale }});transform-origin: {{ origin }};">
           </a>
         </div>
       {% endfor %}
