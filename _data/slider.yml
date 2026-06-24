@@ -50,6 +50,29 @@
   caption_zh: "康博士在答辩中作报告"
   date: 2026-06-22
 
+# ----- 2026-06-03 — Greater Bay PERL Third Meeting (Jun 5, 2026) -----
+# Tony Liu presented PraasPer; lab members also presented posters
+- file: 2026-06-03-praasper-gba-perl-talk.jpg
+  thumb: thumbs/2026-06-03-praasper-gba-perl-talk.jpg
+  caption: "Tony LIU Presenting PraasPer at the Greater Bay PERL Third Meeting"
+  caption_zh: "Tony LIU 在第三届大湾区 PERL 会议演讲 PraasPer"
+  date: 2026-06-03
+  position: left bottom
+
+- file: 2026-06-03-poster-multilingual-fluency.jpg
+  thumb: thumbs/2026-06-03-poster-multilingual-fluency.jpg
+  caption: "Lab Poster: Multilingual Verbal Fluency with Text Embeddings"
+  caption_zh: "实验室海报：基于文本嵌入的多语种言语流畅度"
+  date: 2026-06-03
+  position: right center
+
+- file: 2026-06-03-poster-cantonese-multimodal.jpg
+  thumb: thumbs/2026-06-03-poster-cantonese-multimodal.jpg
+  caption: "Lab Poster: Multimodal Matrix for Cantonese Linguistic Research"
+  caption_zh: "实验室海报：粤语语言研究的多模态矩阵"
+  date: 2026-06-03
+  position: center 20%
+
 # ----- 2026-01-13 — ICPEAL & Lab hot pot gathering -----
 - file: photo_260113_2.jpg
   thumb: thumbs/photo_260113_2.jpg
