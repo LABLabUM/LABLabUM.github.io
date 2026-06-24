@@ -8,7 +8,10 @@
 #
 # 干的事:
 #   1. 原图保持不动（保留所有像素，click-to-zoom 用）
-#   2. 生成压缩版到 images/slider/thumbs/<name>.jpg（≤2000px, JPEG 80%）
+#   2. 生成轻压版到 images/slider/thumbs/<name>.jpg（保留原图分辨率，JPEG 92%）
+#      - 不再限制长边：原图所有像素都保留，最大支持 4K/5K 屏
+#      - 92% JPEG 视觉上几乎无损，文件大小只有原图 50-70%
+#      - click-to-zoom 仍指向原图（更清晰）
 #
 # 文件结构（前后对比）:
 #   之前: images/slider/event13.JPG （被覆盖压缩）
@@ -37,8 +40,10 @@ import sys
 from pathlib import Path
 from PIL import Image
 
-MAX_LONG_EDGE = 2000
-JPEG_QUALITY = 80
+# MAX_LONG_EDGE: 不再限制长边 — 保留原图所有像素以保证最高画质
+#                如果将来需要限制，把下面这行取消注释并改数字
+# MAX_LONG_EDGE = 2400
+JPEG_QUALITY = 92
 
 def human_size(n):
     for unit in ("B", "KB", "MB", "GB"):
@@ -70,10 +75,10 @@ for arg in sys.argv[1:]:
         print(f"  ⚠️  跳过（不是图片）: {src}  ({e})")
         continue
 
-    # 缩放（保持宽高比）
+    # 缩放（保持宽高比）— 默认不缩放（保留原图所有像素）
     w, h = img.size
     long_edge = max(w, h)
-    if long_edge > MAX_LONG_EDGE:
+    if "MAX_LONG_EDGE" in dir() and MAX_LONG_EDGE and long_edge > MAX_LONG_EDGE:
         scale = MAX_LONG_EDGE / long_edge
         new_size = (int(w * scale), int(h * scale))
         img = img.resize(new_size, Image.LANCZOS)
