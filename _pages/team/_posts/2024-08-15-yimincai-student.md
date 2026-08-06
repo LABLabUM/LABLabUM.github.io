@@ -1,9 +1,9 @@
 ---
 layout: member
-category: master student
+category: phd student
 title: Troy, Yimin CAI
 image: yimincai.jpg
-role: Master Student
+role: PhD Student
 email: mc46413@um.edu.mo
 permalink: 'team/yimin-cai'
 social:
