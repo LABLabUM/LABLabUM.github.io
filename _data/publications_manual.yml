@@ -119,3 +119,17 @@
     languages: alternatives to the language history questionnaire'
   venue_type: Journal Article
   year: '2026'
+- authors: Walters, K., Nakamura, M. S., Cosgrove, A. L., Zhang, H., Troutman, S.
+    B. W., Gertel, V. H., & Diaz, M. T.
+  doi: 10.1044/2026_jslhr-25-00799
+  journal: 'Journal of Speech, Language, and Hearing Research, 1-19'
+  link: https://doi.org/10.1044/2026_jslhr-25-00799
+  note: >-
+    Not in OpenAlex as of 2026-09-25 (checked by title search + Crossref). DOI and
+    author list verified via Crossref (published 2026-09-02). Found by diffing the
+    PI's Google Scholar profile (sortby=pubdate) against publications.json.
+  publication_date: '2026-09-02'
+  source: manual
+  title: Age and Discourse Task Independently Influence Disfluency Production
+  venue_type: Journal Article
+  year: '2026'
