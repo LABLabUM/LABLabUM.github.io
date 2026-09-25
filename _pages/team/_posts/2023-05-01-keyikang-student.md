@@ -18,7 +18,7 @@ social:
 position:
 - PhD Graduate, LAB Lab, University of Macau (2023&ndash;2026)
 - 'Thesis: <i>The Contribution of Semantic Representation Attributes to Lexical Retrieval during Production</i>'
-- 'Supervisor: Prof. Haoyun ZHANG &middot; Co-Supervisor: Prof. Rucy-Song HUANG'
+- 'Supervisor: Prof. Haoyun ZHANG &middot; Co-Supervisor: Prof. Ruey-Song HUANG'
 - 'Defended on 22 June 2026 &mdash; the first PhD graduate of LAB Lab 🎓'
 
 research_interests:
