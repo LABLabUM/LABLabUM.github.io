@@ -47,7 +47,21 @@ except ImportError:
 # ============ 配置 ============
 
 # PI 在 OpenAlex 的 Author ID
+# 2026-09-25: OpenAlex 给新论文常常另建一个同名的作者档案（没有 ORCID 的作者会被反复拆分），
+# 只查主 ID 会漏新文章（CNPOLL、CanSpeak/Scientific Data 就是这么漏的）。
+# 所有主 ID 用 | 起 OR 查询，再用下面的机构白名单挡同名误归。
 PI_OPENALEX_ID = "A5047800217"
+PI_OPENALEX_IDS = [
+    "A5047800217",   # 主档案
+    "A5149088808",   # 2026 CNPOLL (J. Psycholinguistic Research)
+    "A5151716196",   # 2026 CanSpeak (Scientific Data)
+]
+PI_OPENALEX_FILTER = "|".join(PI_OPENALEX_IDS)
+
+# 2026-09-25（用户指示）：publications 页只放文章。
+# OpenAlex 的 work type 命中这里的，一律不进 publications.json。
+# 'dataset' 主要是 Zenodo 数据存款（CanSpeak 语料/录音），它们在 Zenodo 上有独立 DOI，但不算文章。
+EXCLUDE_TYPES = {"dataset"}
 
 # OpenAlex API endpoint
 OPENALEX_API = "https://api.openalex.org"
@@ -169,8 +183,12 @@ def fetch_openalex_works(author_id: str, per_page: int = 200) -> list[dict]:
             r.raise_for_status()
             data = r.json()
         except requests.RequestException as e:
-            print(f"  ❌ Network error on page {page}: {e}")
-            break
+            # 2026-09-25: was `break` — a single network hiccup returned a partial
+            # (sometimes empty) work list, and main() then wrote a shrunken
+            # publications.json with no error. Fail loudly instead.
+            raise RuntimeError(
+                f"OpenAlex request failed on page {page} ({url}): {e}"
+            ) from e
 
         results = data.get("results", [])
         all_works.extend(results)
@@ -233,9 +251,10 @@ def is_likely_lab_paper(work: dict) -> bool:
     """
     has_pi = False
     pi_insts_match = False
+    pi_id_suffixes = tuple(f"/{i}" for i in PI_OPENALEX_IDS)
     for a in work.get("authorships", []):
         au = a.get("author") or {}
-        if (au.get("id") or "").endswith(f"/{PI_OPENALEX_ID}"):
+        if any((au.get("id") or "").endswith(s) for s in pi_id_suffixes):
             has_pi = True
             # 检查 PI 的所有 institutions
             for inst in (a.get("institutions") or []):
@@ -510,26 +529,38 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="只打印 diff，不写文件")
     ap.add_argument("--no-merge", action="store_true", help="不合并 manual yml")
+    ap.add_argument("--allow-empty", action="store_true",
+                    help="OpenAlex 返回 0 篇时也继续（默认中止，防止把列表写空）")
+    ap.add_argument("--allow-shrink", action="store_true",
+                    help="结果比现有 publications.json 少时也继续（默认中止）")
     args = ap.parse_args()
 
     print("=" * 70)
     print("  LAB Lab — Publications fetcher")
-    print(f"  PI OpenAlex ID: {PI_OPENALEX_ID}")
+    print(f"  PI OpenAlex IDs: {', '.join(PI_OPENALEX_IDS)}")
     print(f"  Output: {OUTPUT_JSON.relative_to(REPO_ROOT)}")
     print(f"  Manual yml: {MANUAL_YML.relative_to(REPO_ROOT)}")
     print("=" * 70)
 
     # 1. Fetch
     print("\n📡 Fetching from OpenAlex...")
-    works = fetch_openalex_works(PI_OPENALEX_ID)
+    works = fetch_openalex_works(PI_OPENALEX_FILTER)
     print(f"  Total works fetched: {len(works)}")
+    if not works and not args.allow_empty:
+        sys.exit("❌ OpenAlex returned 0 works — 中止，不写 publications.json"
+                 "（如确需写空列表，加 --allow-empty）")
 
     # 2. Filter + dedupe
     print("\n🔍 Keeping PI's works + de-duplicating...")
     seen_dois = set()
     seen_titles = set()
     kept = []
+    skipped_datasets = 0
     for w in works:
+        # 2026-09-25 user rule: publications 页只放文章，数据集（Zenodo 等）不进列表
+        if (w.get("type") or "").strip().lower() in EXCLUDE_TYPES:
+            skipped_datasets += 1
+            continue
         if not is_likely_lab_paper(w):
             continue
         # Dedupe by DOI first, then by title
@@ -544,6 +575,8 @@ def main():
                 continue
             seen_titles.add(title)
         kept.append(w)
+    if skipped_datasets:
+        print(f"  ⏭️  Skipped (non-article types {sorted(EXCLUDE_TYPES)}): {skipped_datasets}")
     dropped = len(works) - len(kept)
     print(f"  ✅ Kept (after dedup): {len(kept)}")
     print(f"  ❌ Dropped: {dropped}")
@@ -598,6 +631,26 @@ def main():
         return
 
     # 7. Write
+    # Guard: never silently replace a longer list with a shorter one
+    if OUTPUT_JSON.exists() and not args.allow_shrink:
+        try:
+            prev = json.loads(OUTPUT_JSON.read_text(encoding="utf-8"))
+        except Exception:
+            prev = []
+        if prev and len(pubs) < len(prev):
+            sys.exit(f"❌ 这次只生成 {len(pubs)} 条，现有 {OUTPUT_JSON.name} 有 {len(prev)} 条 — "
+                     f"中止，不覆盖（确认无误加 --allow-shrink）")
+        if prev:
+            prev_titles = {(p.get("title") or "").strip().lower() for p in prev}
+            new_titles = {(p.get("title") or "").strip().lower() for p in pubs}
+            added = new_titles - prev_titles
+            removed = prev_titles - new_titles
+            print(f"\n📊 vs current file: +{len(added)} / -{len(removed)}")
+            for t in sorted(added)[:10]:
+                print(f"   + {t[:78]}")
+            for t in sorted(removed)[:10]:
+                print(f"   - {t[:78]}")
+
     print(f"\n💾 Writing {len(pubs)} publications to {OUTPUT_JSON.relative_to(REPO_ROOT)}...")
     OUTPUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
